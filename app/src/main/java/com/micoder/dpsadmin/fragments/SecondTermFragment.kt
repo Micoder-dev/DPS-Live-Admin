@@ -8,8 +8,7 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
-import com.google.firebase.database.DatabaseReference
-import com.google.firebase.database.FirebaseDatabase
+import com.google.firebase.database.*
 import com.google.firebase.database.ktx.database
 import com.google.firebase.ktx.Firebase
 import com.micoder.dpsadmin.R
@@ -48,11 +47,39 @@ class SecondTermFragment : Fragment() {
         edtPractical = view.findViewById(R.id.edtPractical)
         updateMarksBtn = view.findViewById(R.id.updateMarksBtn)
 
+        retriveMarks()
+
         updateMarksBtn.setOnClickListener {
             updateMarks()
         }
 
         return view
+    }
+
+    private fun retriveMarks() {
+        databaseReference.child("users").child(uid).child("results").child("Term2")
+            .addListenerForSingleValueEvent(object : ValueEventListener {
+                override fun onDataChange(snapshot: DataSnapshot) {
+                    if (snapshot.exists()) {
+                        val english = snapshot.child("english").getValue().toString()
+                        val maths = snapshot.child("maths").getValue().toString()
+                        val cs = snapshot.child("cs").getValue().toString()
+                        val practical = snapshot.child("practical").getValue().toString()
+
+                        edtEnglish.setText(english)
+                        edtMaths.setText(maths)
+                        edtCS.setText(cs)
+                        edtPractical.setText(practical)
+                    } else {
+                        Toast.makeText(context, "No Marks Updated for Term 2", Toast.LENGTH_LONG).show()
+                    }
+                }
+
+                override fun onCancelled(error: DatabaseError) {
+                    Toast.makeText(context, "$error", Toast.LENGTH_SHORT).show()
+                }
+
+            })
     }
 
     private fun updateMarks() {

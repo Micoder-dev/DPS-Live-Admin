@@ -1,4 +1,4 @@
-package com.micoder.dpsadmin
+package com.micoder.dpsadmin.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -10,6 +10,7 @@ import androidx.appcompat.widget.SearchView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.firebase.database.*
+import com.micoder.dpsadmin.R
 import com.micoder.dpsadmin.adapters.UsersAdapter
 import com.micoder.dpsadmin.models.Users
 

@@ -11,6 +11,7 @@ import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
 import com.micoder.dpsadmin.R
 import com.micoder.dpsadmin.models.Users
+import com.micoder.dpsadmin.ui.UserInfoActivity
 
 class UsersAdapter(private var context: Context, private var userList : ArrayList<Users>) : RecyclerView.Adapter<UsersAdapter.UsersViewHolder>() {
 
@@ -37,14 +38,12 @@ class UsersAdapter(private var context: Context, private var userList : ArrayLis
             val userEmail: String = currentitem.email.toString()
             val userUid: String = currentitem.uid.toString()
 
-            Toast.makeText(context, userEmail+userName+userUid, Toast.LENGTH_LONG).show()
-
-            /*val intent = Intent(context, UserInfoActivity::class.java)
+            val intent = Intent(context, UserInfoActivity::class.java)
             intent.putExtra("userName", userName)
             intent.putExtra("userEmail", userEmail)
             intent.putExtra("userUid", userUid)
 
-            context.startActivity(intent)*/
+            context.startActivity(intent)
 
         }
 

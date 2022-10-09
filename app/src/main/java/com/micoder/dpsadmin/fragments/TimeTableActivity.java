@@ -94,17 +94,17 @@ public class TimeTableActivity extends AppCompatActivity {
                 if (snapshot.child("Sunday1").getValue(String.class) != null)
                     Sun1.setText(snapshot.child("Sunday1").getValue(String.class) + "\n(" + snapshot.child("Sunday1s").getValue(String.class) + ")");
                 if (snapshot.child("Sunday2").getValue(String.class) != null)
-                    Sun2.setText(snapshot.child("Sunday2").getValue(String.class) + "\n(" + snapshot.child("Sunday1s").getValue(String.class) + ")");
+                    Sun2.setText(snapshot.child("Sunday2").getValue(String.class) + "\n(" + snapshot.child("Sunday2s").getValue(String.class) + ")");
                 if (snapshot.child("Sunday3").getValue(String.class) != null)
-                    Sun3.setText(snapshot.child("Sunday3").getValue(String.class) + "\n(" + snapshot.child("Sunday1s").getValue(String.class) + ")");
+                    Sun3.setText(snapshot.child("Sunday3").getValue(String.class) + "\n(" + snapshot.child("Sunday3s").getValue(String.class) + ")");
                 if (snapshot.child("Sunday4").getValue(String.class) != null)
-                    Sun4.setText(snapshot.child("Sunday4").getValue(String.class) + "\n(" + snapshot.child("Sunday1s").getValue(String.class) + ")");
+                    Sun4.setText(snapshot.child("Sunday4").getValue(String.class) + "\n(" + snapshot.child("Sunday4s").getValue(String.class) + ")");
                 if (snapshot.child("Sunday5").getValue(String.class) != null)
-                    Sun5.setText(snapshot.child("Sunday5").getValue(String.class) + "\n(" + snapshot.child("Sunday1s").getValue(String.class) + ")");
+                    Sun5.setText(snapshot.child("Sunday5").getValue(String.class) + "\n(" + snapshot.child("Sunday5s").getValue(String.class) + ")");
                 if (snapshot.child("Sunday6").getValue(String.class) != null)
-                    Sun6.setText(snapshot.child("Sunday6").getValue(String.class) + "\n(" + snapshot.child("Sunday1s").getValue(String.class) + ")");
+                    Sun6.setText(snapshot.child("Sunday6").getValue(String.class) + "\n(" + snapshot.child("Sunday6s").getValue(String.class) + ")");
                 if (snapshot.child("Sunday7").getValue(String.class) != null)
-                    Sun7.setText(snapshot.child("Sunday7").getValue(String.class) + "\n(" + snapshot.child("Sunday1s").getValue(String.class) + ")");
+                    Sun7.setText(snapshot.child("Sunday7").getValue(String.class) + "\n(" + snapshot.child("Sunday7s").getValue(String.class) + ")");
 
                 if (snapshot.child("Monday1").getValue(String.class) != null)
                     Mon1.setText(snapshot.child("Monday1").getValue(String.class) + "\n(" + snapshot.child("Monday1s").getValue(String.class) + ")");
@@ -572,7 +572,6 @@ public class TimeTableActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 show(Thu4,"Thursday4");
-
             }
         });
         Thu5.setOnClickListener(new View.OnClickListener() {

@@ -11,226 +11,205 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#7A3AC2"
-
         tools:layout_editor_absoluteX="1dp"
         tools:layout_editor_absoluteY="1dp">
 
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-
-            android:gravity="center_vertical"
-
             android:layout_weight="1"
-            >
+            android:gravity="center_vertical">
+
             <TextView
                 android:layout_width="30dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-
-                android:textStyle="bold"
-                android:gravity="center"
-                android:textColor="@color/white"
-                android:background="#9651E4"
-                android:layout_marginBottom="1dp"
                 android:layout_marginHorizontal="1dp"
-                android:text="Saturday"/>
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="#9651E4"
+                android:gravity="center"
+                android:text="Saturday"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
             <TextView
                 android:layout_width="50dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-
-                android:textStyle="bold"
-                android:textColor="@color/white"
-                android:gravity="center"
-                android:background="#9651E4"
-                android:layout_marginBottom="1dp"
                 android:layout_marginHorizontal="1dp"
-                android:text="Friday"/>
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="#9651E4"
+                android:gravity="center"
+                android:text="Friday"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
             <TextView
                 android:layout_width="50dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-
-                android:textStyle="bold"
-                android:textColor="@color/white"
-                android:gravity="center"
-                android:background="#9651E4"
-                android:layout_marginBottom="1dp"
                 android:layout_marginHorizontal="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="#9651E4"
+                android:gravity="center"
                 android:text="Thursday"
-                />
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
             <TextView
                 android:layout_width="50dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-
-                android:textStyle="bold"
-                android:textColor="@color/white"
-                android:gravity="center"
-                android:background="#9651E4"
-                android:layout_marginBottom="1dp"
                 android:layout_marginHorizontal="1dp"
-                android:text="Wednesday"/>
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="#9651E4"
+                android:gravity="center"
+                android:text="Wednesday"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
             <TextView
                 android:layout_width="50dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-
-                android:textStyle="bold"
-                android:textColor="@color/white"
-                android:gravity="center"
-                android:background="#9651E4"
-                android:layout_marginBottom="1dp"
                 android:layout_marginHorizontal="1dp"
-                android:text="Tuesday"/>
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="#9651E4"
+                android:gravity="center"
+                android:text="Tuesday"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
             <TextView
                 android:layout_width="50dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-
-                android:textStyle="bold"
-                android:textColor="@color/white"
-                android:gravity="center"
-                android:background="#9651E4"
-                android:layout_marginBottom="1dp"
                 android:layout_marginHorizontal="1dp"
-                android:text="Monday"/>
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="#9651E4"
+                android:gravity="center"
+                android:text="Monday"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
             <TextView
                 android:layout_width="50dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-
-                android:textStyle="bold"
-                android:textColor="@color/white"
-                android:gravity="center"
-                android:background="#9651E4"
-                android:layout_marginBottom="1dp"
                 android:layout_marginHorizontal="1dp"
-                android:text="Sunday"/>
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="#9651E4"
+                android:gravity="center"
+                android:text="Sunday"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
             <TextView
                 android:layout_width="50dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-
-                android:textStyle="bold"
-                android:textColor="@color/white"
-                android:gravity="center"
-                android:background="#9651E4"
-                android:layout_marginBottom="1dp"
                 android:layout_marginHorizontal="1dp"
-                android:text="Time"/>
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="#9651E4"
+                android:gravity="center"
+                android:text="Time"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
         </TableRow>
+
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-
-            android:gravity="center_vertical"
-
             android:layout_weight="1"
-            >
+            android:gravity="center_vertical">
+
             <TextView
                 android:id="@+id/Saturday1"
                 android:layout_width="50dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-
-                android:gravity="center"
-                android:background="@color/white"
-                android:layout_marginBottom="1dp"
                 android:layout_marginHorizontal="1dp"
-                android:text="Sat1"/>
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center" />
+
             <TextView
                 android:id="@+id/Friday1"
                 android:layout_width="50dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-
-                android:gravity="center"
-                android:background="@color/white"
-                android:layout_marginBottom="1dp"
                 android:layout_marginHorizontal="1dp"
-                android:text="Fri1"/>
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center" />
+
             <TextView
                 android:id="@+id/Thursday1"
                 android:layout_width="50dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-
-                android:gravity="center"
-                android:background="@color/white"
-                android:layout_marginBottom="1dp"
                 android:layout_marginHorizontal="1dp"
-                android:text="Thu1"
-                />
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center" />
+
             <TextView
                 android:id="@+id/Wednesday1"
                 android:layout_width="50dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-
-                android:gravity="center"
-                android:background="@color/white"
-                android:layout_marginBottom="1dp"
                 android:layout_marginHorizontal="1dp"
-                android:text="Wed1"/>
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center" />
+
             <TextView
                 android:id="@+id/Tuesday1"
                 android:layout_width="50dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-
-                android:gravity="center"
-                android:background="@color/white"
-                android:layout_marginBottom="1dp"
                 android:layout_marginHorizontal="1dp"
-                android:text="Tue1"/>
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center" />
+
             <TextView
                 android:id="@+id/Monday1"
                 android:layout_width="50dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-
-                android:gravity="center"
-                android:background="@color/white"
-                android:layout_marginBottom="1dp"
                 android:layout_marginHorizontal="1dp"
-                android:text="Monday1"/>
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center" />
+
             <TextView
                 android:id="@+id/Sunday1"
                 android:layout_width="50dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-
-                android:gravity="center"
-                android:background="@color/white"
-                android:layout_marginBottom="1dp"
                 android:layout_marginHorizontal="1dp"
-                android:text="Sunda1"/>
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center" />
 
             <LinearLayout
                 android:layout_width="50dp"
                 android:layout_height="match_parent"
-
-                android:orientation="vertical"
                 android:layout_marginBottom="1dp"
                 android:layout_weight="1"
-                >
+                android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/timeslot1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-
                     android:background="#9651E4"
                     android:gravity="center"
                     android:text="00:00"
                     android:textColor="@color/white"
-
-
                     android:textSize="11dp"
-
                     android:textStyle="bold" />
 
                 <TextView
@@ -238,131 +217,110 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-
                     android:background="#9651E4"
                     android:gravity="center"
                     android:text="00:00"
                     android:textColor="@color/white"
-
-
                     android:textSize="11dp"
-
                     android:textStyle="bold" />
-
 
             </LinearLayout>
 
         </TableRow>
+
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-
-            android:gravity="center_vertical"
-
             android:layout_weight="1"
-            >
+            android:gravity="center_vertical">
+
             <TextView
                 android:id="@+id/Saturday2"
                 android:layout_width="50dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-
-                android:gravity="center"
-                android:background="@color/white"
-                android:layout_marginBottom="1dp"
                 android:layout_marginHorizontal="1dp"
-                android:text="Sat2"/>
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center" />
+
             <TextView
                 android:id="@+id/Friday2"
                 android:layout_width="50dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-
-                android:gravity="center"
-                android:background="@color/white"
-                android:layout_marginBottom="1dp"
                 android:layout_marginHorizontal="1dp"
-                android:text="Fri2"/>
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center" />
+
             <TextView
                 android:id="@+id/Thursday2"
                 android:layout_width="50dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-
-                android:gravity="center"
-                android:background="@color/white"
-                android:layout_marginBottom="1dp"
                 android:layout_marginHorizontal="1dp"
-                android:text="Thu2"
-                />
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center" />
+
             <TextView
                 android:id="@+id/Wednesday2"
                 android:layout_width="50dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-
-                android:gravity="center"
-                android:background="@color/white"
-                android:layout_marginBottom="1dp"
                 android:layout_marginHorizontal="1dp"
-                android:text="Wed2"/>
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center" />
+
             <TextView
                 android:id="@+id/Tuesday2"
                 android:layout_width="50dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-
-                android:gravity="center"
-                android:background="@color/white"
-                android:layout_marginBottom="1dp"
                 android:layout_marginHorizontal="1dp"
-                android:text="Tue2"/>
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center" />
+
             <TextView
                 android:id="@+id/Monday2"
                 android:layout_width="50dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-
-                android:gravity="center"
-                android:background="@color/white"
-                android:layout_marginBottom="1dp"
                 android:layout_marginHorizontal="1dp"
-                android:text="Monday2"/>
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center" />
+
             <TextView
                 android:id="@+id/Sunday2"
                 android:layout_width="50dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-
-                android:gravity="center"
-                android:background="@color/white"
-                android:layout_marginBottom="1dp"
                 android:layout_marginHorizontal="1dp"
-                android:text="Sunday2"/>
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center" />
 
             <LinearLayout
                 android:layout_width="50dp"
                 android:layout_height="match_parent"
                 android:layout_marginBottom="1dp"
-
-                android:orientation="vertical"
                 android:layout_weight="1"
-                >
+                android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/timeslot3"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-
                     android:background="#9651E4"
                     android:gravity="center"
                     android:text="00:00"
                     android:textColor="@color/white"
-
-
                     android:textSize="11dp"
-
                     android:textStyle="bold" />
 
                 <TextView
@@ -370,132 +328,111 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-
                     android:background="#9651E4"
                     android:gravity="center"
                     android:text="00:00"
                     android:textColor="@color/white"
-
-
                     android:textSize="11dp"
-
                     android:textStyle="bold" />
 
 
             </LinearLayout>
 
         </TableRow>
+
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-
-            android:gravity="center_vertical"
-
             android:layout_weight="1"
-            >
+            android:gravity="center_vertical">
+
             <TextView
                 android:id="@+id/Saturday3"
                 android:layout_width="50dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-
-                android:gravity="center"
-                android:background="@color/white"
-                android:layout_marginBottom="1dp"
                 android:layout_marginHorizontal="1dp"
-                android:text="Sat3"/>
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center" />
+
             <TextView
                 android:id="@+id/Friday3"
                 android:layout_width="50dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-
-                android:gravity="center"
-                android:background="@color/white"
-                android:layout_marginBottom="1dp"
                 android:layout_marginHorizontal="1dp"
-                android:text="Fri3"/>
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center" />
+
             <TextView
                 android:id="@+id/Thursday3"
                 android:layout_width="50dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-
-                android:gravity="center"
-                android:background="@color/white"
-                android:layout_marginBottom="1dp"
                 android:layout_marginHorizontal="1dp"
-                android:text="Thu3"
-                />
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center" />
+
             <TextView
                 android:id="@+id/Wednesday3"
                 android:layout_width="50dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-
-                android:gravity="center"
-                android:background="@color/white"
-                android:layout_marginBottom="1dp"
                 android:layout_marginHorizontal="1dp"
-                android:text="Wed3"/>
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center" />
+
             <TextView
                 android:id="@+id/Tuesday3"
                 android:layout_width="50dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-
-                android:gravity="center"
-                android:background="@color/white"
-                android:layout_marginBottom="1dp"
                 android:layout_marginHorizontal="1dp"
-                android:text="Tue3"/>
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center" />
+
             <TextView
                 android:id="@+id/Monday3"
                 android:layout_width="50dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-
-                android:gravity="center"
-                android:background="@color/white"
-                android:layout_marginBottom="1dp"
                 android:layout_marginHorizontal="1dp"
-                android:text="Mon3"/>
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center" />
+
             <TextView
                 android:id="@+id/Sunday3"
                 android:layout_width="50dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-
-                android:gravity="center"
-                android:background="@color/white"
-                android:layout_marginBottom="1dp"
                 android:layout_marginHorizontal="1dp"
-                android:text="Sunday3"/>
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center" />
 
             <LinearLayout
                 android:layout_width="50dp"
                 android:layout_height="match_parent"
                 android:layout_marginBottom="1dp"
-
-
-                android:orientation="vertical"
                 android:layout_weight="1"
-                >
+                android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/timeslot5"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-
                     android:background="#9651E4"
                     android:gravity="center"
                     android:text="00:00"
                     android:textColor="@color/white"
-
-
                     android:textSize="11dp"
-
                     android:textStyle="bold" />
 
                 <TextView
@@ -503,15 +440,11 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-
                     android:background="#9651E4"
                     android:gravity="center"
                     android:text="00:00"
                     android:textColor="@color/white"
-
-
                     android:textSize="11dp"
-
                     android:textStyle="bold" />
 
 
@@ -519,120 +452,100 @@
 
         </TableRow>
 
-
-
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-
-            android:gravity="center_vertical"
-
             android:layout_weight="1"
-            >
+            android:gravity="center_vertical">
+
             <TextView
                 android:id="@+id/Saturday4"
                 android:layout_width="50dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-
-                android:gravity="center"
-                android:background="@color/white"
-                android:layout_marginBottom="1dp"
                 android:layout_marginHorizontal="1dp"
-                android:text="Sat4"/>
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center" />
+
             <TextView
                 android:id="@+id/Friday4"
                 android:layout_width="50dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-
-                android:gravity="center"
-                android:background="@color/white"
-                android:layout_marginBottom="1dp"
                 android:layout_marginHorizontal="1dp"
-                android:text="Fri4"/>
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center" />
+
             <TextView
                 android:id="@+id/Thursday4"
                 android:layout_width="50dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-
-                android:gravity="center"
-                android:background="@color/white"
-                android:layout_marginBottom="1dp"
                 android:layout_marginHorizontal="1dp"
-                android:text="Thu4"
-                />
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center" />
+
             <TextView
                 android:id="@+id/Wednesday4"
                 android:layout_width="50dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-
-                android:gravity="center"
-                android:background="@color/white"
-                android:layout_marginBottom="1dp"
                 android:layout_marginHorizontal="1dp"
-                android:text="Wed4"/>
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center" />
+
             <TextView
                 android:id="@+id/Tuesday4"
                 android:layout_width="50dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-
-                android:gravity="center"
-                android:background="@color/white"
-                android:layout_marginBottom="1dp"
                 android:layout_marginHorizontal="1dp"
-                android:text="Tue4"/>
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center" />
+
             <TextView
                 android:id="@+id/Monday4"
                 android:layout_width="50dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-
-                android:gravity="center"
-                android:background="@color/white"
-                android:layout_marginBottom="1dp"
                 android:layout_marginHorizontal="1dp"
-                android:text="Mon4"/>
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center" />
+
             <TextView
                 android:id="@+id/Sunday4"
                 android:layout_width="50dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-
-                android:gravity="center"
-                android:background="@color/white"
-                android:layout_marginBottom="1dp"
                 android:layout_marginHorizontal="1dp"
-                android:text="Sunday4"/>
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center" />
 
             <LinearLayout
                 android:layout_width="50dp"
                 android:layout_height="match_parent"
-                android:layout_marginBottom="1dp"
                 android:layout_marginTop="1dp"
-
-
-                android:orientation="vertical"
+                android:layout_marginBottom="1dp"
                 android:layout_weight="1"
-                >
+                android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/timeslot7"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-
                     android:background="#9651E4"
                     android:gravity="center"
                     android:text="00:00"
                     android:textColor="@color/white"
-
-
                     android:textSize="11dp"
-
                     android:textStyle="bold" />
 
                 <TextView
@@ -640,132 +553,111 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-
                     android:background="#9651E4"
                     android:gravity="center"
                     android:text="00:00"
                     android:textColor="@color/white"
-
-
                     android:textSize="11dp"
-
                     android:textStyle="bold" />
 
 
             </LinearLayout>
 
         </TableRow>
+
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-
-            android:gravity="center_vertical"
-
             android:layout_weight="1"
-            >
+            android:gravity="center_vertical">
+
             <TextView
                 android:id="@+id/Saturday5"
                 android:layout_width="50dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-
-                android:gravity="center"
-                android:background="@color/white"
-                android:layout_marginBottom="1dp"
                 android:layout_marginHorizontal="1dp"
-                android:text="Sat5"/>
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center" />
+
             <TextView
                 android:id="@+id/Friday5"
                 android:layout_width="50dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-
-                android:gravity="center"
-                android:background="@color/white"
-                android:layout_marginBottom="1dp"
                 android:layout_marginHorizontal="1dp"
-                android:text="Fri5"/>
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center" />
+
             <TextView
                 android:id="@+id/Thursday5"
                 android:layout_width="50dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-
-                android:gravity="center"
-                android:background="@color/white"
-                android:layout_marginBottom="1dp"
                 android:layout_marginHorizontal="1dp"
-                android:text="Thu5"
-                />
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center" />
+
             <TextView
                 android:id="@+id/Wednesday5"
                 android:layout_width="50dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-
-                android:gravity="center"
-                android:background="@color/white"
-                android:layout_marginBottom="1dp"
                 android:layout_marginHorizontal="1dp"
-                android:text="Wed5"/>
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center" />
+
             <TextView
                 android:id="@+id/Tuesday5"
                 android:layout_width="50dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-
-                android:gravity="center"
-                android:background="@color/white"
-                android:layout_marginBottom="1dp"
                 android:layout_marginHorizontal="1dp"
-                android:text="Tue5"/>
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center" />
+
             <TextView
                 android:id="@+id/Monday5"
                 android:layout_width="50dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-
-                android:gravity="center"
-                android:background="@color/white"
-                android:layout_marginBottom="1dp"
                 android:layout_marginHorizontal="1dp"
-                android:text="Mon5"/>
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center" />
+
             <TextView
                 android:id="@+id/Sunday5"
                 android:layout_width="50dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-
-                android:gravity="center"
-                android:background="@color/white"
-                android:layout_marginBottom="1dp"
                 android:layout_marginHorizontal="1dp"
-                android:text="Sunday5"/>
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center" />
 
             <LinearLayout
                 android:layout_width="50dp"
                 android:layout_height="match_parent"
                 android:layout_marginBottom="1dp"
-
-
-                android:orientation="vertical"
                 android:layout_weight="1"
-                >
+                android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/timeslot9"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-
                     android:background="#9651E4"
                     android:gravity="center"
                     android:text="00:00"
                     android:textColor="@color/white"
-
-
                     android:textSize="11dp"
-
                     android:textStyle="bold" />
 
                 <TextView
@@ -773,132 +665,110 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-
                     android:background="#9651E4"
                     android:gravity="center"
                     android:text="00:00"
                     android:textColor="@color/white"
-
-
                     android:textSize="11dp"
-
                     android:textStyle="bold" />
-
 
             </LinearLayout>
 
         </TableRow>
+
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-
-            android:gravity="center_vertical"
-
             android:layout_weight="1"
-            >
+            android:gravity="center_vertical">
+
             <TextView
                 android:id="@+id/Saturday6"
                 android:layout_width="50dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-
-                android:gravity="center"
-                android:background="@color/white"
-                android:layout_marginBottom="1dp"
                 android:layout_marginHorizontal="1dp"
-                android:text="Sat6"/>
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center" />
+
             <TextView
                 android:id="@+id/Friday6"
                 android:layout_width="50dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-
-                android:gravity="center"
-                android:background="@color/white"
-                android:layout_marginBottom="1dp"
                 android:layout_marginHorizontal="1dp"
-                android:text="Fri6"/>
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center" />
+
             <TextView
                 android:id="@+id/Thursday6"
                 android:layout_width="50dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-
-                android:gravity="center"
-                android:background="@color/white"
-                android:layout_marginBottom="1dp"
                 android:layout_marginHorizontal="1dp"
-                android:text="Thu6"
-                />
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center" />
+
             <TextView
                 android:id="@+id/Wednesday6"
                 android:layout_width="50dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-
-                android:gravity="center"
-                android:background="@color/white"
-                android:layout_marginBottom="1dp"
                 android:layout_marginHorizontal="1dp"
-                android:text="Wed6"/>
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center" />
+
             <TextView
                 android:id="@+id/Tuesday6"
                 android:layout_width="50dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-
-                android:gravity="center"
-                android:background="@color/white"
-                android:layout_marginBottom="1dp"
                 android:layout_marginHorizontal="1dp"
-                android:text="Tue6"/>
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center" />
+
             <TextView
                 android:id="@+id/Monday6"
                 android:layout_width="50dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-
-                android:gravity="center"
-                android:background="@color/white"
-                android:layout_marginBottom="1dp"
                 android:layout_marginHorizontal="1dp"
-                android:text="Mon6"/>
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center" />
+
             <TextView
                 android:id="@+id/Sunday6"
                 android:layout_width="50dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-
-                android:gravity="center"
-                android:background="@color/white"
-                android:layout_marginBottom="1dp"
                 android:layout_marginHorizontal="1dp"
-                android:text="Sunday6"/>
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center" />
 
             <LinearLayout
                 android:layout_width="50dp"
                 android:layout_height="match_parent"
                 android:layout_marginBottom="1dp"
-
-
-                android:orientation="vertical"
                 android:layout_weight="1"
-                >
+                android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/timeslot11"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-
                     android:background="#9651E4"
                     android:gravity="center"
                     android:text="00:00"
                     android:textColor="@color/white"
-
-
                     android:textSize="11dp"
-
                     android:textStyle="bold" />
 
                 <TextView
@@ -906,132 +776,110 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-
                     android:background="#9651E4"
                     android:gravity="center"
                     android:text="00:00"
                     android:textColor="@color/white"
-
-
                     android:textSize="11dp"
-
                     android:textStyle="bold" />
-
 
             </LinearLayout>
 
         </TableRow>
+
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-
-            android:gravity="center_vertical"
-
             android:layout_weight="1"
-            >
+            android:gravity="center_vertical">
+
             <TextView
                 android:id="@+id/Saturday7"
                 android:layout_width="50dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-
-                android:gravity="center"
-                android:background="@color/white"
-                android:layout_marginBottom="1dp"
                 android:layout_marginHorizontal="1dp"
-                android:text="Sat7"/>
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center" />
+
             <TextView
                 android:id="@+id/Friday7"
                 android:layout_width="50dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-
-                android:gravity="center"
-                android:background="@color/white"
-                android:layout_marginBottom="1dp"
                 android:layout_marginHorizontal="1dp"
-                android:text="Fri7"/>
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center" />
+
             <TextView
                 android:id="@+id/Thursday7"
                 android:layout_width="50dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-
-                android:gravity="center"
-                android:background="@color/white"
-                android:layout_marginBottom="1dp"
                 android:layout_marginHorizontal="1dp"
-                android:text="Thu7"
-                />
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center" />
+
             <TextView
                 android:id="@+id/Wednesday7"
                 android:layout_width="50dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-
-                android:gravity="center"
-                android:background="@color/white"
-                android:layout_marginBottom="1dp"
                 android:layout_marginHorizontal="1dp"
-                android:text="Wed7"/>
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center" />
+
             <TextView
                 android:id="@+id/Tuesday7"
                 android:layout_width="50dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-
-                android:gravity="center"
-                android:background="@color/white"
-                android:layout_marginBottom="1dp"
                 android:layout_marginHorizontal="1dp"
-                android:text="Tue7"/>
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center" />
+
             <TextView
                 android:id="@+id/Monday7"
                 android:layout_width="50dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-
-                android:gravity="center"
-                android:background="@color/white"
-                android:layout_marginBottom="1dp"
                 android:layout_marginHorizontal="1dp"
-                android:text="Mon7"/>
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center" />
+
             <TextView
                 android:id="@+id/Sunday7"
                 android:layout_width="50dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-
-                android:gravity="center"
-                android:background="@color/white"
-                android:layout_marginBottom="1dp"
                 android:layout_marginHorizontal="1dp"
-                android:text="Sunday7"/>
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center" />
 
             <LinearLayout
                 android:layout_width="50dp"
                 android:layout_height="match_parent"
                 android:layout_marginBottom="1dp"
-
-
-                android:orientation="vertical"
                 android:layout_weight="1"
-                >
+                android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/timeslot13"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-
                     android:background="#9651E4"
                     android:gravity="center"
                     android:text="00:00"
                     android:textColor="@color/white"
-
-
                     android:textSize="11dp"
-
                     android:textStyle="bold" />
 
                 <TextView
@@ -1039,23 +887,16 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-
                     android:background="#9651E4"
                     android:gravity="center"
                     android:text="00:00"
                     android:textColor="@color/white"
-
-
                     android:textSize="11dp"
-
                     android:textStyle="bold" />
-
 
             </LinearLayout>
 
         </TableRow>
-
-
 
 
     </TableLayout>

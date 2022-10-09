@@ -63,141 +63,146 @@ public class TimeTableActivity extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 if (snapshot.child("timeslot1").getValue(String.class)!= null)
                     timeslot1.setText(snapshot.child("timeslot1").getValue(String.class));
-
                 if (snapshot.child("timeslot2").getValue(String.class)!= null)
                     timeslot2.setText(snapshot.child("timeslot2").getValue(String.class));
-
                 if (snapshot.child("timeslot3").getValue(String.class)!= null)
                     timeslot3.setText(snapshot.child("timeslot3").getValue(String.class));
-
                 if (snapshot.child("timeslot4").getValue(String.class)!= null)
                     timeslot4.setText(snapshot.child("timeslot4").getValue(String.class));
-
                 if (snapshot.child("timeslot5").getValue(String.class)!= null)
                     timeslot5.setText(snapshot.child("timeslot5").getValue(String.class));
-
                 if (snapshot.child("timeslot6").getValue(String.class)!= null)
                     timeslot6.setText(snapshot.child("timeslot6").getValue(String.class));
-
                 if (snapshot.child("timeslot7").getValue(String.class)!= null)
                     timeslot7.setText(snapshot.child("timeslot7").getValue(String.class));
-
                 if (snapshot.child("timeslot8").getValue(String.class)!= null)
                     timeslot8.setText(snapshot.child("timeslot8").getValue(String.class));
-
                 if (snapshot.child("timeslot9").getValue(String.class)!= null)
                     timeslot9.setText(snapshot.child("timeslot9").getValue(String.class));
-
                 if (snapshot.child("timeslot10").getValue(String.class)!= null)
                     timeslot10.setText(snapshot.child("timeslot10").getValue(String.class));
-
                 if (snapshot.child("timeslot11").getValue(String.class)!= null)
                     timeslot11.setText(snapshot.child("timeslot11").getValue(String.class));
-
                 if (snapshot.child("timeslot12").getValue(String.class)!= null)
                     timeslot12.setText(snapshot.child("timeslot12").getValue(String.class));
-
                 if (snapshot.child("timeslot13").getValue(String.class)!= null)
                     timeslot13.setText(snapshot.child("timeslot13").getValue(String.class));
-
                 if (snapshot.child("timeslot14").getValue(String.class)!= null)
                     timeslot14.setText(snapshot.child("timeslot14").getValue(String.class));
 
 
+                if (snapshot.child("Sunday1").getValue(String.class) != null)
+                    Sun1.setText(snapshot.child("Sunday1").getValue(String.class) + "\n(" + snapshot.child("Sunday1s").getValue(String.class) + ")");
+                if (snapshot.child("Sunday2").getValue(String.class) != null)
+                    Sun2.setText(snapshot.child("Sunday2").getValue(String.class) + "\n(" + snapshot.child("Sunday1s").getValue(String.class) + ")");
+                if (snapshot.child("Sunday3").getValue(String.class) != null)
+                    Sun3.setText(snapshot.child("Sunday3").getValue(String.class) + "\n(" + snapshot.child("Sunday1s").getValue(String.class) + ")");
+                if (snapshot.child("Sunday4").getValue(String.class) != null)
+                    Sun4.setText(snapshot.child("Sunday4").getValue(String.class) + "\n(" + snapshot.child("Sunday1s").getValue(String.class) + ")");
+                if (snapshot.child("Sunday5").getValue(String.class) != null)
+                    Sun5.setText(snapshot.child("Sunday5").getValue(String.class) + "\n(" + snapshot.child("Sunday1s").getValue(String.class) + ")");
+                if (snapshot.child("Sunday6").getValue(String.class) != null)
+                    Sun6.setText(snapshot.child("Sunday6").getValue(String.class) + "\n(" + snapshot.child("Sunday1s").getValue(String.class) + ")");
+                if (snapshot.child("Sunday7").getValue(String.class) != null)
+                    Sun7.setText(snapshot.child("Sunday7").getValue(String.class) + "\n(" + snapshot.child("Sunday1s").getValue(String.class) + ")");
 
+                if (snapshot.child("Monday1").getValue(String.class) != null)
+                    Mon1.setText(snapshot.child("Monday1").getValue(String.class) + "\n(" + snapshot.child("Monday1s").getValue(String.class) + ")");
+                if (snapshot.child("Monday2").getValue(String.class) != null)
+                    Mon2.setText(snapshot.child("Monday2").getValue(String.class) + "\n(" + snapshot.child("Monday2s").getValue(String.class) + ")");
+                if (snapshot.child("Monday3").getValue(String.class) != null)
+                    Mon3.setText(snapshot.child("Monday3").getValue(String.class) + "\n(" + snapshot.child("Monday3s").getValue(String.class) + ")");
+                if (snapshot.child("Monday4").getValue(String.class) != null)
+                    Mon4.setText(snapshot.child("Monday4").getValue(String.class) + "\n(" + snapshot.child("Monday4s").getValue(String.class) + ")");
+                if (snapshot.child("Monday5").getValue(String.class) != null)
+                    Mon5.setText(snapshot.child("Monday5").getValue(String.class) + "\n(" + snapshot.child("Monday5s").getValue(String.class) + ")");
+                if (snapshot.child("Monday6").getValue(String.class) != null)
+                    Mon6.setText(snapshot.child("Monday6").getValue(String.class) + "\n(" + snapshot.child("Monday6s").getValue(String.class) + ")");
+                if (snapshot.child("Monday7").getValue(String.class) != null)
+                    Mon7.setText(snapshot.child("Monday7").getValue(String.class) + "\n(" + snapshot.child("Monday7s").getValue(String.class) + ")");
 
+                if (snapshot.child("Tuesday1").getValue(String.class) != null)
+                    Tue1.setText(snapshot.child("Tuesday1").getValue(String.class) + "\n(" + snapshot.child("Tuesday1s").getValue(String.class) + ")");
+                if (snapshot.child("Tuesday2").getValue(String.class) != null)
+                    Tue2.setText(snapshot.child("Tuesday2").getValue(String.class) + "\n(" + snapshot.child("Tuesday2s").getValue(String.class) + ")");
+                if (snapshot.child("Tuesday3").getValue(String.class) != null)
+                    Tue3.setText(snapshot.child("Tuesday3").getValue(String.class) + "\n(" + snapshot.child("Tuesday3s").getValue(String.class) + ")");
+                if (snapshot.child("Tuesday4").getValue(String.class) != null)
+                    Tue4.setText(snapshot.child("Tuesday4").getValue(String.class) + "\n(" + snapshot.child("Tuesday4s").getValue(String.class) + ")");
+                if (snapshot.child("Tuesday5").getValue(String.class) != null)
+                    Tue5.setText(snapshot.child("Tuesday5").getValue(String.class) + "\n(" + snapshot.child("Tuesday5s").getValue(String.class) + ")");
+                if (snapshot.child("Tuesday6").getValue(String.class) != null)
+                    Tue6.setText(snapshot.child("Tuesday6").getValue(String.class) + "\n(" + snapshot.child("Tuesday6s").getValue(String.class) + ")");
+                if (snapshot.child("Tuesday7").getValue(String.class) != null)
+                    Tue7.setText(snapshot.child("Tuesday7").getValue(String.class) + "\n(" + snapshot.child("Tuesday7s").getValue(String.class) + ")");
 
+                if (snapshot.child("Wednesday1").getValue(String.class) != null)
+                    Wed1.setText(snapshot.child("Wednesday1").getValue(String.class) + "\n(" + snapshot.child("Wednesday1s").getValue(String.class) + ")");
+                if (snapshot.child("Wednesday2").getValue(String.class) != null)
+                    Wed2.setText(snapshot.child("Wednesday2").getValue(String.class) + "\n(" + snapshot.child("Wednesday2s").getValue(String.class) + ")");
+                if (snapshot.child("Wednesday3").getValue(String.class) != null)
+                    Wed3.setText(snapshot.child("Wednesday3").getValue(String.class) + "\n(" + snapshot.child("Wednesday3s").getValue(String.class) + ")");
+                if (snapshot.child("Wednesday4").getValue(String.class) != null)
+                    Wed4.setText(snapshot.child("Wednesday4").getValue(String.class) + "\n(" + snapshot.child("Wednesday4s").getValue(String.class) + ")");
+                if (snapshot.child("Wednesday5").getValue(String.class) != null)
+                    Wed5.setText(snapshot.child("Wednesday5").getValue(String.class) + "\n(" + snapshot.child("Wednesday5s").getValue(String.class) + ")");
+                if (snapshot.child("Wednesday6").getValue(String.class) != null)
+                    Wed6.setText(snapshot.child("Wednesday6").getValue(String.class) + "\n(" + snapshot.child("Wednesday6s").getValue(String.class) + ")");
+                if (snapshot.child("Wednesday7").getValue(String.class) != null)
+                    Wed7.setText(snapshot.child("Wednesday7").getValue(String.class) + "\n(" + snapshot.child("Wednesday7s").getValue(String.class) + ")");
 
+                if (snapshot.child("Thursday1").getValue(String.class) != null)
+                    Thu1.setText(snapshot.child("Thursday1").getValue(String.class) + "\n(" + snapshot.child("Thursday1s").getValue(String.class) + ")");
+                if (snapshot.child("Thursday2").getValue(String.class) != null)
+                    Thu2.setText(snapshot.child("Thursday2").getValue(String.class) + "\n(" + snapshot.child("Thursday2s").getValue(String.class) + ")");
+                if (snapshot.child("Thursday3").getValue(String.class) != null)
+                    Thu3.setText(snapshot.child("Thursday3").getValue(String.class) + "\n(" + snapshot.child("Thursday3s").getValue(String.class) + ")");
+                if (snapshot.child("Thursday4").getValue(String.class) != null)
+                    Thu4.setText(snapshot.child("Thursday4").getValue(String.class) + "\n(" + snapshot.child("Thursday4s").getValue(String.class) + ")");
+                if (snapshot.child("Thursday5").getValue(String.class) != null)
+                    Thu5.setText(snapshot.child("Thursday5").getValue(String.class) + "\n(" + snapshot.child("Thursday5s").getValue(String.class) + ")");
+                if (snapshot.child("Thursday6").getValue(String.class) != null)
+                    Thu6.setText(snapshot.child("Thursday6").getValue(String.class) + "\n(" + snapshot.child("Thursday6s").getValue(String.class) + ")");
+                if (snapshot.child("Thursday7").getValue(String.class) != null)
+                    Thu7.setText(snapshot.child("Thursday7").getValue(String.class) + "\n(" + snapshot.child("Thursday7s").getValue(String.class) + ")");
 
+                if (snapshot.child("Friday1").getValue(String.class) != null)
+                    Fri1.setText(snapshot.child("Friday1").getValue(String.class) + "\n(" + snapshot.child("Friday1s").getValue(String.class) + ")");
+                if (snapshot.child("Friday2").getValue(String.class) != null)
+                    Fri2.setText(snapshot.child("Friday2").getValue(String.class) + "\n(" + snapshot.child("Friday2s").getValue(String.class) + ")");
+                if (snapshot.child("Friday3").getValue(String.class) != null)
+                    Fri3.setText(snapshot.child("Friday3").getValue(String.class) + "\n(" + snapshot.child("Friday3s").getValue(String.class) + ")");
+                if (snapshot.child("Friday4").getValue(String.class) != null)
+                    Fri4.setText(snapshot.child("Friday4").getValue(String.class) + "\n(" + snapshot.child("Friday4s").getValue(String.class) + ")");
+                if (snapshot.child("Friday5").getValue(String.class) != null)
+                    Fri5.setText(snapshot.child("Friday5").getValue(String.class) + "\n(" + snapshot.child("Friday5s").getValue(String.class) + ")");
+                if (snapshot.child("Friday6").getValue(String.class) != null)
+                    Fri6.setText(snapshot.child("Friday6").getValue(String.class) + "\n(" + snapshot.child("Friday6s").getValue(String.class) + ")");
+                if (snapshot.child("Friday7").getValue(String.class) != null)
+                    Fri7.setText(snapshot.child("Friday7").getValue(String.class) + "\n(" + snapshot.child("Friday7s").getValue(String.class) + ")");
 
-
-
-
-
-
-
-
-
-
-
-
-                Sun1.setText(snapshot.child("Sunday1").getValue(String.class));
-                Sun2.setText(snapshot.child("Sunday2").getValue(String.class));
-                Sun3.setText(snapshot.child("Sunday3").getValue(String.class));
-                Sun4.setText(snapshot.child("Sunday4").getValue(String.class));
-                Sun5.setText(snapshot.child("Sunday5").getValue(String.class));
-                Sun6.setText(snapshot.child("Sunday6").getValue(String.class));
-                Sun7.setText(snapshot.child("Sunday7").getValue(String.class));
-
-                Mon1.setText(snapshot.child("Monday1").getValue(String.class));
-                Mon2.setText(snapshot.child("Monday2").getValue(String.class));
-                Mon3.setText(snapshot.child("Monday3").getValue(String.class));
-                Mon4.setText(snapshot.child("Monday4").getValue(String.class));
-                Mon5.setText(snapshot.child("Monday5").getValue(String.class));
-                Mon6.setText(snapshot.child("Monday6").getValue(String.class));
-                Mon7.setText(snapshot.child("Monday7").getValue(String.class));
-
-                Tue1.setText(snapshot.child("Tuesday1").getValue(String.class));
-                Tue2.setText(snapshot.child("Tuesday2").getValue(String.class));
-                Tue3.setText(snapshot.child("Tuesday3").getValue(String.class));
-                Tue4.setText(snapshot.child("Tuesday4").getValue(String.class));
-                Tue5.setText(snapshot.child("Tuesday5").getValue(String.class));
-                Tue6.setText(snapshot.child("Tuesday6").getValue(String.class));
-                Tue7.setText(snapshot.child("Tuesday7").getValue(String.class));
-
-
-                Wed1.setText(snapshot.child("Wednesday1").getValue(String.class));
-                Wed2.setText(snapshot.child("Wednesday2").getValue(String.class));
-                Wed3.setText(snapshot.child("Wednesday3").getValue(String.class));
-                Wed4.setText(snapshot.child("Wednesday4").getValue(String.class));
-                Wed5.setText(snapshot.child("Wednesday5").getValue(String.class));
-                Wed6.setText(snapshot.child("Wednesday6").getValue(String.class));
-                Wed7.setText(snapshot.child("Wednesday7").getValue(String.class));
-
-                Thu1.setText(snapshot.child("Thursday1").getValue(String.class));
-                Thu2.setText(snapshot.child("Thursday2").getValue(String.class));
-                Thu3.setText(snapshot.child("Thursday3").getValue(String.class));
-                Thu4.setText(snapshot.child("Thursday4").getValue(String.class));
-                Thu5.setText(snapshot.child("Thursday5").getValue(String.class));
-                Thu6.setText(snapshot.child("Thursday6").getValue(String.class));
-                Thu7.setText(snapshot.child("Thursday7").getValue(String.class));
-
-                Fri1.setText(snapshot.child("Friday1").getValue(String.class));
-                Fri2.setText(snapshot.child("Friday2").getValue(String.class));
-                Fri3.setText(snapshot.child("Friday3").getValue(String.class));
-                Fri4.setText(snapshot.child("Friday4").getValue(String.class));
-                Fri5.setText(snapshot.child("Friday5").getValue(String.class));
-                Fri6.setText(snapshot.child("Friday6").getValue(String.class));
-                Fri7.setText(snapshot.child("Friday7").getValue(String.class));
-
-                Sat1.setText(snapshot.child("Saturday1").getValue(String.class));
-                Sat2.setText(snapshot.child("Saturday2").getValue(String.class));
-                Sat3.setText(snapshot.child("Saturday3").getValue(String.class));
-                Sat4.setText(snapshot.child("Saturday4").getValue(String.class));
-                Sat5.setText(snapshot.child("Saturday5").getValue(String.class));
-                Sat6.setText(snapshot.child("Saturday6").getValue(String.class));
-                Sat7.setText(snapshot.child("Saturday7").getValue(String.class));
-
-
-
+                if (snapshot.child("Saturday1").getValue(String.class) != null)
+                    Sat1.setText(snapshot.child("Saturday1").getValue(String.class) + "\n(" + snapshot.child("Saturday1s").getValue(String.class) + ")");
+                if (snapshot.child("Saturday2").getValue(String.class) != null)
+                    Sat2.setText(snapshot.child("Saturday2").getValue(String.class) + "\n(" + snapshot.child("Saturday2s").getValue(String.class) + ")");
+                if (snapshot.child("Saturday3").getValue(String.class) != null)
+                    Sat3.setText(snapshot.child("Saturday3").getValue(String.class) + "\n(" + snapshot.child("Saturday3s").getValue(String.class) + ")");
+                if (snapshot.child("Saturday4").getValue(String.class) != null)
+                    Sat4.setText(snapshot.child("Saturday4").getValue(String.class) + "\n(" + snapshot.child("Saturday4s").getValue(String.class) + ")");
+                if (snapshot.child("Saturday5").getValue(String.class) != null)
+                    Sat5.setText(snapshot.child("Saturday5").getValue(String.class) + "\n(" + snapshot.child("Saturday5s").getValue(String.class) + ")");
+                if (snapshot.child("Saturday6").getValue(String.class) != null)
+                    Sat6.setText(snapshot.child("Saturday6").getValue(String.class) + "\n(" + snapshot.child("Saturday6s").getValue(String.class) + ")");
+                if (snapshot.child("Saturday7").getValue(String.class) != null)
+                    Sat7.setText(snapshot.child("Saturday7").getValue(String.class) + "\n(" + snapshot.child("Saturday7s").getValue(String.class) + ")");
 
 
             }
 
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
-
             }
         };
-
-
-
-
-
-
-
-
-
 
 
         dialog=new Dialog(TimeTableActivity.this);
@@ -205,20 +210,10 @@ public class TimeTableActivity extends AppCompatActivity {
         //dialog.getWindow().setBackgroundDrawable(getDrawable(R.drawable.ic_launcher_background));
         dialog.getWindow().setLayout(ViewGroup.LayoutParams.MATCH_PARENT,ViewGroup.LayoutParams.WRAP_CONTENT);
 
-
-
-
-
-
-
-
-
-
         editText=dialog.findViewById(R.id.po);
         editText2=dialog.findViewById(R.id.staffName);
         add_subject=dialog.findViewById(R.id.add_subject);
         delete_subject=dialog.findViewById(R.id.delete_subject);
-
 
 
         //--------timeslots-------------------------------------
@@ -241,110 +236,86 @@ public class TimeTableActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 pickTime(timeslot1,"timeslot1");
-
-
             }
         });
         timeslot2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 pickTime(timeslot2,"timeslot2");
-
             }
         });
         timeslot3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 pickTime(timeslot3,"timeslot3");
-
             }
         });
         timeslot4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 pickTime(timeslot4,"timeslot4");
-
             }
         });
         timeslot5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 pickTime(timeslot5,"timeslot5");
-
             }
         });
         timeslot6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 pickTime(timeslot6,"timeslot6");
-
             }
         });
         timeslot7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 pickTime(timeslot7,"timeslot7");
-
             }
         });
         timeslot8.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 pickTime(timeslot8,"timeslot8");
-
             }
         });
         timeslot9.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 pickTime(timeslot9,"timeslot9");
-
             }
         });
         timeslot10.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 pickTime(timeslot10,"timeslot10");
-
             }
         });
         timeslot11.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 pickTime(timeslot11,"timeslot11");
-
             }
         });
         timeslot12.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 pickTime(timeslot12,"timeslot12");
-
             }
         });
         timeslot13.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 pickTime(timeslot13,"timeslot13");
-
             }
         });
         timeslot14.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 pickTime(timeslot14,"timeslot14");
-
             }
         });
-
-
-
-
-
-
-
-
-
 
 
         Sun1=findViewById(R.id.Sunday1);
@@ -379,7 +350,6 @@ public class TimeTableActivity extends AppCompatActivity {
         Wed6=findViewById(R.id.Wednesday6);
         Wed7=findViewById(R.id.Wednesday7);
 
-
         Thu1=findViewById(R.id.Thursday1);
         Thu2=findViewById(R.id.Thursday2);
         Thu3=findViewById(R.id.Thursday3);
@@ -387,7 +357,6 @@ public class TimeTableActivity extends AppCompatActivity {
         Thu5=findViewById(R.id.Thursday5);
         Thu6=findViewById(R.id.Thursday6);
         Thu7=findViewById(R.id.Thursday7);
-
 
         Fri1=findViewById(R.id.Friday1);
         Fri2=findViewById(R.id.Friday2);
@@ -397,7 +366,6 @@ public class TimeTableActivity extends AppCompatActivity {
         Fri6=findViewById(R.id.Friday6);
         Fri7=findViewById(R.id.Friday7);
 
-
         Sat1=findViewById(R.id.Saturday1);
         Sat2=findViewById(R.id.Saturday2);
         Sat3=findViewById(R.id.Saturday3);
@@ -406,71 +374,49 @@ public class TimeTableActivity extends AppCompatActivity {
         Sat6=findViewById(R.id.Saturday6);
         Sat7=findViewById(R.id.Saturday7);
 
-
         databaseStudents.addListenerForSingleValueEvent(listener);
-
 
         //click listerns -----------------------------------------------------------------
         Sun1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
                 show(Sun1,"Sunday1");
-
-
-
-
-
-
             }
         });
         Sun2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 show(Sun2,"Sunday2");
-
-
             }
         });
         Sun3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 show(Sun3,"Sunday3");
-
-
             }
         });
         Sun4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 show(Sun4,"Sunday4");
-
-
             }
         });
         Sun5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 show(Sun5,"Sunday5");
-
-
             }
         });
         Sun6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 show(Sun6,"Sunday6");
-
-
-
-
             }
         });
         Sun7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 show(Sun7,"Sunday7");
-
             }
         });
 
@@ -478,52 +424,42 @@ public class TimeTableActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 show(Mon1,"Monday1");
-
             }
         });
         Mon2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 show(Mon2,"Monday2");
-
-
             }
         });
         Mon3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 show(Mon3,"Monday3");
-
             }
         });
         Mon4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 show(Mon4,"Monday4");
-
-
             }
         });
         Mon5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 show(Mon5,"Monday5");
-
-
             }
         });
         Mon6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 show(Mon6,"Monday6");
-
             }
         });
         Mon7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 show(Mon7,"Monday7");
-
             }
         });
 
@@ -531,49 +467,42 @@ public class TimeTableActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 show(Tue1,"Tuesday1");
-
             }
         });
         Tue2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 show(Tue2,"Tuesday2");
-
             }
         });
         Tue3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 show(Tue3,"Tuesday3");
-
             }
         });
         Tue4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 show(Tue4,"Tuesday4");
-
             }
         });
         Tue5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 show(Tue5,"Tuesday5");
-
             }
         });
         Tue6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 show(Tue6,"Tuesday6");
-
             }
         });
         Tue7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 show(Tue7,"Tuesday7");
-
             }
         });
 
@@ -582,49 +511,42 @@ public class TimeTableActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 show(Wed1,"Wednesday1");
-
             }
         });
         Wed2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 show(Wed2,"Wednesday2");
-
             }
         });
         Wed3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 show(Wed3,"Wednesday3");
-
             }
         });
         Wed4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 show(Wed4,"Wednesday4");
-
             }
         });
         Wed5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 show(Wed5,"Wednesday5");
-
             }
         });
         Wed6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 show(Wed6,"Wednesday6");
-
             }
         });
         Wed7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 show(Wed7,"Wednesday7");
-
             }
         });
 
@@ -632,21 +554,18 @@ public class TimeTableActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 show(Thu1,"Thursday1");
-
             }
         });
         Thu2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 show(Thu2,"Thursday2");
-
             }
         });
         Thu3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 show(Thu3,"Thursday3");
-
             }
         });
         Thu4.setOnClickListener(new View.OnClickListener() {
@@ -660,21 +579,18 @@ public class TimeTableActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 show(Thu5,"Thursday5");
-
             }
         });
         Thu6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 show(Thu6,"Thursday6");
-
             }
         });
         Thu7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 show(Thu7,"Thursday7");
-
             }
         });
 
@@ -683,49 +599,42 @@ public class TimeTableActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 show(Fri1,"Friday1");
-
             }
         });
         Fri2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 show(Fri2,"Friday2");
-
             }
         });
         Fri3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 show(Fri3,"Friday3");
-
             }
         });
         Fri4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 show(Fri4,"Friday4");
-
             }
         });
         Fri5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 show(Fri5,"Friday5");
-
             }
         });
         Fri6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 show(Fri6,"Friday6");
-
             }
         });
         Fri7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 show(Fri7,"Friday7");
-
             }
         });
 
@@ -733,56 +642,48 @@ public class TimeTableActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 show(Sat1,"Saturday1");
-
             }
         });
         Sat2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 show(Sat2,"Saturday2");
-
             }
         });
         Sat3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 show(Sat3,"Saturday3");
-
             }
         });
         Sat4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 show(Sat4,"Saturday4");
-
             }
         });
         Sat5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 show(Sat5,"Saturday5");
-
             }
         });
         Sat6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 show(Sat6,"Saturday6");
-
             }
         });
         Sat7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 show(Sat7,"Saturday7");
-
             }
         });
-
-
-
-
     }
+
+
+
     public void show(TextView textView,String dayname){
         timetable_subject=null;
         timetable_staff=null;

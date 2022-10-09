@@ -28,9 +28,11 @@ public class TimeTableActivity extends AppCompatActivity {
 
     Dialog dialog;
     EditText editText;
+    EditText editText2;
     Button delete_subject,add_subject;
 
     String timetable_subject;
+    String timetable_staff;
     DatabaseReference databaseStudents;
     ValueEventListener listener;
     TextView Sun1,Sun2,Sun3,Sun4,Sun5,Sun6,Sun7,
@@ -200,7 +202,7 @@ public class TimeTableActivity extends AppCompatActivity {
 
         dialog=new Dialog(TimeTableActivity.this);
         dialog.setContentView(R.layout.custom_popup_dialog);
-        dialog.getWindow().setBackgroundDrawable(getDrawable(R.drawable.ic_launcher_background));
+        //dialog.getWindow().setBackgroundDrawable(getDrawable(R.drawable.ic_launcher_background));
         dialog.getWindow().setLayout(ViewGroup.LayoutParams.MATCH_PARENT,ViewGroup.LayoutParams.WRAP_CONTENT);
 
 
@@ -213,6 +215,7 @@ public class TimeTableActivity extends AppCompatActivity {
 
 
         editText=dialog.findViewById(R.id.po);
+        editText2=dialog.findViewById(R.id.staffName);
         add_subject=dialog.findViewById(R.id.add_subject);
         delete_subject=dialog.findViewById(R.id.delete_subject);
 
@@ -782,30 +785,32 @@ public class TimeTableActivity extends AppCompatActivity {
     }
     public void show(TextView textView,String dayname){
         timetable_subject=null;
+        timetable_staff=null;
 
         dialog.show();
-
-
-
-
-
-
-
 
         add_subject.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 timetable_subject=editText.getText().toString();
+                timetable_staff=editText2.getText().toString();
 
                 if(timetable_subject.isEmpty()){
                     editText.requestFocus();
-                    editText.setError("field is empty");
-                }else{
+                    editText.setError("subject name required");
+                }
+                else if (timetable_staff.isEmpty()) {
+                    editText2.requestFocus();
+                    editText2.setError("staff name required");
+                }
+                else{
                     HashMap<String, Object> values = new HashMap<>();
                     values.put(dayname, timetable_subject);
+                    values.put(dayname+"s", timetable_staff);
                     databaseStudents.updateChildren(values);
-                    textView.setText(timetable_subject);
+                    textView.setText(timetable_subject +"\n(" +timetable_staff +")" );
                     editText.setText("");
+                    editText2.setText("");
                     dialog.dismiss();}
             }
         });
@@ -814,6 +819,7 @@ public class TimeTableActivity extends AppCompatActivity {
             public void onClick(View view) {
 
                 databaseStudents.child(dayname).removeValue();
+                databaseStudents.child(dayname+"s").removeValue();
                 textView.setText("");
                 dialog.dismiss();
             }

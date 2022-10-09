@@ -1,5 +1,6 @@
 package com.micoder.dpsadmin.ui
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
@@ -14,6 +15,7 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.firebase.database.*
 import com.micoder.dpsadmin.R
 import com.micoder.dpsadmin.adapters.UsersAdapter
+import com.micoder.dpsadmin.fragments.TimeTableActivity
 import com.micoder.dpsadmin.models.Users
 
 class MainActivity : AppCompatActivity() {
@@ -57,7 +59,7 @@ class MainActivity : AppCompatActivity() {
             }
         }
         timeTable.setOnClickListener {
-            Toast.makeText(this@MainActivity, "Time Table clicked..", Toast.LENGTH_LONG).show()
+            startActivity(Intent(this, TimeTableActivity::class.java))
         }
 
     }

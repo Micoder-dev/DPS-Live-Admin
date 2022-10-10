@@ -15,7 +15,6 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.firebase.database.*
 import com.micoder.dpsadmin.R
 import com.micoder.dpsadmin.adapters.UsersAdapter
-import com.micoder.dpsadmin.fragments.TimeTableActivity
 import com.micoder.dpsadmin.models.Users
 
 class MainActivity : AppCompatActivity() {

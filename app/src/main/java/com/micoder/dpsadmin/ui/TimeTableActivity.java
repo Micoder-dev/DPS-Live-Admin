@@ -1,4 +1,4 @@
-package com.micoder.dpsadmin.fragments;
+package com.micoder.dpsadmin.ui;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;

@@ -114,13 +114,13 @@ class TimeTableActivity : AppCompatActivity() {
         var selectedClass = classes[selectedClassItemIndex]
 
         MaterialAlertDialogBuilder(this, R.style.ThemeOverlay_MaterialComponents_MaterialAlertDialog_Background)
-            .setTitle("Languages")
+            .setTitle("Select Class")
             .setCancelable(false)
             .setSingleChoiceItems(classes, selectedClassItemIndex) {dialog, which ->
                 selectedClassItemIndex = which
                 selectedClass = classes[which]
             }
-            .setPositiveButton("OK") {dialog, which ->
+            .setPositiveButton("Select") {dialog, which ->
                 getData()
                 Toast.makeText(this,selectedClass,Toast.LENGTH_LONG).show()
                 getClass = selectedClass

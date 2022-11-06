@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable/ic_add.xml" value="0.2055" />
         <entry key="app/src/main/res/drawable/ic_time_table.xml" value="0.195" />
         <entry key="app/src/main/res/layout-land/activity_time_table.xml" value="0.4692622950819672" />
         <entry key="app/src/main/res/layout-land/custom_popup_dialog.xml" value="0.47291666666666665" />

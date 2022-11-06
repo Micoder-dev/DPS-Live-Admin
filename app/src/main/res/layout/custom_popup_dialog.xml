@@ -4,7 +4,7 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_gravity="center"
-    android:background="#774BBC">
+    android:background="@color/orange">
 
     <EditText
         android:id="@+id/po"
@@ -14,7 +14,8 @@
         android:hint="Subject Name"
         android:minHeight="48dp"
         android:textColor="@color/white"
-        android:textColorHint="#56B8AE"
+        android:textColorHint="#D8D8D8"
+        android:backgroundTint="#D8D8D8"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -26,7 +27,8 @@
         android:hint="Teacher Name"
         android:minHeight="48dp"
         android:textColor="@color/white"
-        android:textColorHint="#56B8AE"
+        android:textColorHint="#D8D8D8"
+        android:backgroundTint="#D8D8D8"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/po" />

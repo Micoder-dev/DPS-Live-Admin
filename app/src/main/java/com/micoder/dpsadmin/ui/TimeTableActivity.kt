@@ -15,6 +15,8 @@ import com.google.firebase.database.DatabaseError
 import android.view.ViewGroup
 import android.app.TimePickerDialog
 import android.widget.Button
+import android.widget.Toast
+import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import java.util.*
 
 class TimeTableActivity : AppCompatActivity() {
@@ -90,6 +92,9 @@ class TimeTableActivity : AppCompatActivity() {
     private lateinit var timeslot12: TextView
     private lateinit var timeslot13: TextView
     private lateinit var timeslot14: TextView
+
+    var getClass: String = ""
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         supportActionBar!!.hide()
@@ -98,9 +103,35 @@ class TimeTableActivity : AppCompatActivity() {
             WindowManager.LayoutParams.FLAG_FULLSCREEN
         )
         setContentView(R.layout.activity_time_table)
+
+        showAD()
+
+    }
+
+    private fun showAD() {
+        var selectedClassItemIndex = 0
+        val classes = arrayOf("Class 1","Class 2","Class 3","Class 4","Class 5","Class 6","Class 7","Class 8","Class 9","Class 10","Class 11","Class 12")
+        var selectedClass = classes[selectedClassItemIndex]
+
+        MaterialAlertDialogBuilder(this, R.style.ThemeOverlay_MaterialComponents_MaterialAlertDialog_Background)
+            .setTitle("Languages")
+            .setSingleChoiceItems(classes, selectedClassItemIndex) {dialog, which ->
+                selectedClassItemIndex = which
+                selectedClass = classes[which]
+            }
+            .setPositiveButton("OK") {dialog, which ->
+                getData()
+                Toast.makeText(this,selectedClass,Toast.LENGTH_LONG).show()
+                getClass = selectedClass
+            }
+            .show()
+    }
+
+    private fun getData() {
         databaseStudents = FirebaseDatabase.getInstance().getReference("timetable")
         listener = object : ValueEventListener {
-            override fun onDataChange(snapshot: DataSnapshot) {
+            override fun onDataChange(dataSnapshot: DataSnapshot) {
+                val snapshot = dataSnapshot.child(getClass)
                 if (snapshot.child("timeslot1").getValue(String::class.java) != null) timeslot1.text = snapshot.child("timeslot1").getValue(String::class.java)
                 if (snapshot.child("timeslot2").getValue(String::class.java) != null) timeslot2.text = snapshot.child("timeslot2").getValue(String::class.java)
                 if (snapshot.child("timeslot3").getValue(String::class.java) != null) timeslot3.text = snapshot.child("timeslot3").getValue(String::class.java)
@@ -330,7 +361,7 @@ class TimeTableActivity : AppCompatActivity() {
                 val values = HashMap<String, Any>()
                 values[dayname] = timetable_subject!!
                 values[dayname + "s"] = timetable_staff!!
-                databaseStudents!!.updateChildren(values)
+                databaseStudents!!.child(getClass).updateChildren(values)
                 textView!!.text = "$timetable_subject\n($timetable_staff)"
                 editText!!.setText("")
                 editText2!!.setText("")
@@ -338,8 +369,8 @@ class TimeTableActivity : AppCompatActivity() {
             }
         }
         delete_subject!!.setOnClickListener {
-            databaseStudents!!.child(dayname).removeValue()
-            databaseStudents!!.child(dayname + "s").removeValue()
+            databaseStudents!!.child(getClass).child(dayname).removeValue()
+            databaseStudents!!.child(getClass).child(dayname + "s").removeValue()
             textView!!.text = ""
             dialog!!.dismiss()
         }
@@ -350,14 +381,14 @@ class TimeTableActivity : AppCompatActivity() {
             val time = String.format(Locale.getDefault(), "%02d:%02d", h, m)
             val values = HashMap<String, Any>()
             values[slotname] = time
-            databaseStudents!!.updateChildren(values)
+            databaseStudents!!.child(getClass).updateChildren(values)
             textView!!.text = time
         }, 0, 0, true)
         timePickerDialog.show()
     }
 
     override fun onPause() {
-        databaseStudents!!.removeEventListener(listener)
+        databaseStudents!!.child(getClass).removeEventListener(listener)
         super.onPause()
     }
 }

@@ -3,6 +3,7 @@ package com.micoder.dpsadmin.ui
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
+import androidx.appcompat.app.ActionBar
 import androidx.viewpager.widget.ViewPager
 import com.google.android.material.tabs.TabLayout
 import com.micoder.dpsadmin.R
@@ -21,10 +22,15 @@ class UserInfoActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_user_info)
 
+        val ab = supportActionBar
+        if (ab != null) {
+            ab.hide()
+        }
+
         val bundle :Bundle? =intent.extras
         userName = bundle!!.getString("userName").toString()
-        userEmail = bundle!!.getString("userEmail").toString()
-        userUid = bundle!!.getString("userUid").toString()
+        userEmail = bundle.getString("userEmail").toString()
+        userUid = bundle.getString("userUid").toString()
 
         val name = findViewById<TextView>(R.id.userName)
         val email = findViewById<TextView>(R.id.userEmail)
@@ -32,7 +38,7 @@ class UserInfoActivity : AppCompatActivity() {
         name.setText(userName)
         email.setText(userEmail)
 
-        title = "User Details"
+        //  title = "User Details"
         tabLayout = findViewById(R.id.tablayout)
         viewPager = findViewById(R.id.viewPager)
         tabLayout.addTab(tabLayout.newTab().setText("Term 1"))

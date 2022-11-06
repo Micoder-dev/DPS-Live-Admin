@@ -115,6 +115,7 @@ class TimeTableActivity : AppCompatActivity() {
 
         MaterialAlertDialogBuilder(this, R.style.ThemeOverlay_MaterialComponents_MaterialAlertDialog_Background)
             .setTitle("Languages")
+            .setCancelable(false)
             .setSingleChoiceItems(classes, selectedClassItemIndex) {dialog, which ->
                 selectedClassItemIndex = which
                 selectedClass = classes[which]

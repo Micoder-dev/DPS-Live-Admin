@@ -4,55 +4,48 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
     tools:context=".ui.MainActivity">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/userList"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_marginTop="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:listitem="@layout/user_item"/>
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="16dp"
-        android:orientation="vertical"
-        android:padding="10dp"
+
+    <!-- FAB -->
+    <com.nambimobile.widgets.efab.ExpandableFabLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
 
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
+        <com.nambimobile.widgets.efab.Overlay
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:overlay_orientation="portrait" />
+        <com.nambimobile.widgets.efab.ExpandableFab
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="20dp"
+            app:efab_icon="@drawable/ic_add"
+            app:efab_orientation="portrait" />
+        <com.nambimobile.widgets.efab.FabOption
             android:id="@+id/idFABTimeTable"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            android:layout_marginBottom="16dp"
-            android:background="@color/purple_200"
-            android:contentDescription="@string/app_name"
-            android:padding="4dp"
-            android:src="@drawable/ic_time_table"
-            android:visibility="gone"
-            app:backgroundTint="@color/purple_200"
-            app:tint="@color/white" />
+            app:fab_orientation="portrait"
+            app:fab_icon="@drawable/ic_time_table"
+            app:label_text="Time Table" />
 
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/idFABAdd"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            android:layout_marginBottom="16dp"
-            android:background="@color/purple_200"
-            android:contentDescription="@string/app_name"
-            android:padding="4dp"
-            android:src="@drawable/ic_add"
-            app:backgroundTint="@color/purple_200"
-            app:tint="@color/white" />
-    </LinearLayout>
+    </com.nambimobile.widgets.efab.ExpandableFabLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

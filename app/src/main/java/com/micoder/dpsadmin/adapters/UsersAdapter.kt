@@ -5,10 +5,12 @@ import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 import com.micoder.dpsadmin.R
 import com.micoder.dpsadmin.models.Users
 import com.micoder.dpsadmin.ui.UserInfoActivity
@@ -30,6 +32,7 @@ class UsersAdapter(private var context: Context, private var userList : ArrayLis
         val currentitem = userList[position]
         holder.name.text = currentitem.name
         holder.email.text = currentitem.email
+        Glide.with(context).load(currentitem.image).placeholder(R.drawable.ic_launcher_foreground).into(holder.profileUrl)
 
         holder.cardView.setOnClickListener {
             //Toast.makeText(context, currentitem.email, Toast.LENGTH_SHORT).show()
@@ -57,6 +60,7 @@ class UsersAdapter(private var context: Context, private var userList : ArrayLis
     class UsersViewHolder(itemView : View) : RecyclerView.ViewHolder(itemView){
         val name : TextView = itemView.findViewById(R.id.tvName)
         val email : TextView = itemView.findViewById(R.id.tvEmail)
+        val profileUrl : ImageView = itemView.findViewById(R.id.ivProfile)
         val cardView : CardView = itemView.findViewById(R.id.cardview)
     }
 

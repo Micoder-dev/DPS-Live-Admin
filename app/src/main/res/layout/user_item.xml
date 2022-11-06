@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto">
@@ -7,42 +8,63 @@
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="12dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
         android:clickable="true"
+        app:cardUseCompatPadding="true"
         android:foreground="?android:attr/selectableItemBackground"
         app:cardCornerRadius="12dp"
         android:id="@+id/cardview">
 
-        <LinearLayout
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="15dp"
-            android:orientation="horizontal">
+            android:layout_height="wrap_content">
 
-            <LinearLayout
-                android:layout_width="match_parent"
+            <androidx.cardview.widget.CardView
+                android:id="@+id/profileCV"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                app:cardCornerRadius="8dp"
+                android:elevation="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" >
+                <ImageView
+                    android:id="@+id/ivProfile"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_launcher_foreground"/>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="250dp"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:text="MI CODER"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textColor="?android:textColorPrimary"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/profileCV"
+                app:layout_constraintTop_toTopOf="@+id/profileCV" />
 
-                <TextView
-                    android:id="@+id/tvName"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="user name"
-                    android:textAlignment="center"
-                    android:textSize="18sp"
-                    android:textStyle="bold"/>
-                <TextView
-                    android:id="@+id/tvEmail"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="user email"
-                    android:textAlignment="center"
-                    android:textSize="14sp"/>
+            <TextView
+                android:id="@+id/tvEmail"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="micoder.com@gmail.com"
+                android:maxLines="1"
+                android:ellipsize="end"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/profileCV"
+                app:layout_constraintTop_toBottomOf="@+id/tvName" />
 
-            </LinearLayout>
-
-        </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.cardview.widget.CardView>
 

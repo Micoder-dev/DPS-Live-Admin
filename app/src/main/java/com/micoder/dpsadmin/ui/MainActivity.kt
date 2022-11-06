@@ -24,9 +24,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var userArrayList : ArrayList<Users>
     private lateinit var myAdapter: UsersAdapter
 
-    lateinit var addFAB: FloatingActionButton
     lateinit var timeTable: FloatingActionButton
-    var fabVisible = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -40,23 +38,8 @@ class MainActivity : AppCompatActivity() {
         userArrayList = arrayListOf<Users>()
         getUserData()
 
-
-        addFAB = findViewById(R.id.idFABAdd)
         timeTable = findViewById(R.id.idFABTimeTable)
-        fabVisible = false
-        addFAB.setOnClickListener {
-            if (!fabVisible) {
-                timeTable.show()
-                timeTable.visibility = View.VISIBLE
-                addFAB.setImageResource(R.drawable.ic_close)
-                fabVisible = true
-            } else {
-                timeTable.hide()
-                timeTable.visibility = View.GONE
-                addFAB.setImageResource(R.drawable.ic_add)
-                fabVisible = false
-            }
-        }
+
         timeTable.setOnClickListener {
             startActivity(Intent(this, TimeTableActivity::class.java))
         }

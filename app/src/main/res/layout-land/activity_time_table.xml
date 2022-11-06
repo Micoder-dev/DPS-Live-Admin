@@ -6,11 +6,10 @@
     android:layout_height="match_parent"
     tools:context=".ui.TimeTableActivity">
 
-
     <TableLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#7A3AC2"
+        android:background="@color/orange"
         tools:layout_editor_absoluteX="1dp"
         tools:layout_editor_absoluteY="1dp">
 
@@ -21,72 +20,24 @@
             android:gravity="center_vertical">
 
             <TextView
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="@color/orangePlus"
+                android:gravity="center"
+                android:text="Time"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <TextView
                 android:layout_width="30dp"
                 android:layout_height="match_parent"
                 android:layout_marginHorizontal="1dp"
                 android:layout_marginBottom="1dp"
                 android:layout_weight="1"
-                android:background="#9651E4"
-                android:gravity="center"
-                android:text="Saturday"
-                android:textColor="@color/white"
-                android:textStyle="bold" />
-
-            <TextView
-                android:layout_width="50dp"
-                android:layout_height="match_parent"
-                android:layout_marginHorizontal="1dp"
-                android:layout_marginBottom="1dp"
-                android:layout_weight="1"
-                android:background="#9651E4"
-                android:gravity="center"
-                android:text="Friday"
-                android:textColor="@color/white"
-                android:textStyle="bold" />
-
-            <TextView
-                android:layout_width="50dp"
-                android:layout_height="match_parent"
-                android:layout_marginHorizontal="1dp"
-                android:layout_marginBottom="1dp"
-                android:layout_weight="1"
-                android:background="#9651E4"
-                android:gravity="center"
-                android:text="Thursday"
-                android:textColor="@color/white"
-                android:textStyle="bold" />
-
-            <TextView
-                android:layout_width="50dp"
-                android:layout_height="match_parent"
-                android:layout_marginHorizontal="1dp"
-                android:layout_marginBottom="1dp"
-                android:layout_weight="1"
-                android:background="#9651E4"
-                android:gravity="center"
-                android:text="Wednesday"
-                android:textColor="@color/white"
-                android:textStyle="bold" />
-
-            <TextView
-                android:layout_width="50dp"
-                android:layout_height="match_parent"
-                android:layout_marginHorizontal="1dp"
-                android:layout_marginBottom="1dp"
-                android:layout_weight="1"
-                android:background="#9651E4"
-                android:gravity="center"
-                android:text="Tuesday"
-                android:textColor="@color/white"
-                android:textStyle="bold" />
-
-            <TextView
-                android:layout_width="50dp"
-                android:layout_height="match_parent"
-                android:layout_marginHorizontal="1dp"
-                android:layout_marginBottom="1dp"
-                android:layout_weight="1"
-                android:background="#9651E4"
+                android:background="@color/orangePlus"
                 android:gravity="center"
                 android:text="Monday"
                 android:textColor="@color/white"
@@ -98,9 +49,9 @@
                 android:layout_marginHorizontal="1dp"
                 android:layout_marginBottom="1dp"
                 android:layout_weight="1"
-                android:background="#9651E4"
+                android:background="@color/orangePlus"
                 android:gravity="center"
-                android:text="Sunday"
+                android:text="Tuesday"
                 android:textColor="@color/white"
                 android:textStyle="bold" />
 
@@ -110,9 +61,57 @@
                 android:layout_marginHorizontal="1dp"
                 android:layout_marginBottom="1dp"
                 android:layout_weight="1"
-                android:background="#9651E4"
+                android:background="@color/orangePlus"
                 android:gravity="center"
-                android:text="Time"
+                android:text="Wednesday"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="@color/orangePlus"
+                android:gravity="center"
+                android:text="Thursday"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="@color/orangePlus"
+                android:gravity="center"
+                android:text="Friday"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="@color/orangePlus"
+                android:gravity="center"
+                android:text="Saturday"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="@color/orangePlus"
+                android:gravity="center"
+                android:text="Sunday"
                 android:textColor="@color/white"
                 android:textStyle="bold" />
         </TableRow>
@@ -123,38 +122,41 @@
             android:layout_weight="1"
             android:gravity="center_vertical">
 
-            <TextView
-                android:id="@+id/Saturday1"
+            <LinearLayout
                 android:layout_width="50dp"
                 android:layout_height="match_parent"
-                android:layout_marginHorizontal="1dp"
                 android:layout_marginBottom="1dp"
+                android:background="@color/orangePlus"
                 android:layout_weight="1"
-                android:background="@color/white"
-                android:gravity="center" />
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/timeslot1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="00:00"
+                    android:textColor="@color/white"
+                    android:textSize="11dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/timeslot2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="00:00"
+                    android:textColor="@color/white"
+                    android:textSize="11dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
 
             <TextView
-                android:id="@+id/Friday1"
-                android:layout_width="50dp"
-                android:layout_height="match_parent"
-                android:layout_marginHorizontal="1dp"
-                android:layout_marginBottom="1dp"
-                android:layout_weight="1"
-                android:background="@color/white"
-                android:gravity="center" />
-
-            <TextView
-                android:id="@+id/Thursday1"
-                android:layout_width="50dp"
-                android:layout_height="match_parent"
-                android:layout_marginHorizontal="1dp"
-                android:layout_marginBottom="1dp"
-                android:layout_weight="1"
-                android:background="@color/white"
-                android:gravity="center" />
-
-            <TextView
-                android:id="@+id/Wednesday1"
+                android:id="@+id/Monday1"
                 android:layout_width="50dp"
                 android:layout_height="match_parent"
                 android:layout_marginHorizontal="1dp"
@@ -174,7 +176,37 @@
                 android:gravity="center" />
 
             <TextView
-                android:id="@+id/Monday1"
+                android:id="@+id/Wednesday1"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/Thursday1"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/Friday1"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/Saturday1"
                 android:layout_width="50dp"
                 android:layout_height="match_parent"
                 android:layout_marginHorizontal="1dp"
@@ -193,39 +225,6 @@
                 android:background="@color/white"
                 android:gravity="center" />
 
-            <LinearLayout
-                android:layout_width="50dp"
-                android:layout_height="match_parent"
-                android:layout_marginBottom="1dp"
-                android:layout_weight="1"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/timeslot1"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:background="#9651E4"
-                    android:gravity="center"
-                    android:text="00:00"
-                    android:textColor="@color/white"
-                    android:textSize="11dp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/timeslot2"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:background="#9651E4"
-                    android:gravity="center"
-                    android:text="00:00"
-                    android:textColor="@color/white"
-                    android:textSize="11dp"
-                    android:textStyle="bold" />
-
-            </LinearLayout>
-
         </TableRow>
 
         <TableRow
@@ -234,38 +233,41 @@
             android:layout_weight="1"
             android:gravity="center_vertical">
 
-            <TextView
-                android:id="@+id/Saturday2"
+            <LinearLayout
                 android:layout_width="50dp"
                 android:layout_height="match_parent"
-                android:layout_marginHorizontal="1dp"
                 android:layout_marginBottom="1dp"
+                android:background="@color/orangePlus"
                 android:layout_weight="1"
-                android:background="@color/white"
-                android:gravity="center" />
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/timeslot3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="00:00"
+                    android:textColor="@color/white"
+                    android:textSize="11dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/timeslot4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="00:00"
+                    android:textColor="@color/white"
+                    android:textSize="11dp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
 
             <TextView
-                android:id="@+id/Friday2"
-                android:layout_width="50dp"
-                android:layout_height="match_parent"
-                android:layout_marginHorizontal="1dp"
-                android:layout_marginBottom="1dp"
-                android:layout_weight="1"
-                android:background="@color/white"
-                android:gravity="center" />
-
-            <TextView
-                android:id="@+id/Thursday2"
-                android:layout_width="50dp"
-                android:layout_height="match_parent"
-                android:layout_marginHorizontal="1dp"
-                android:layout_marginBottom="1dp"
-                android:layout_weight="1"
-                android:background="@color/white"
-                android:gravity="center" />
-
-            <TextView
-                android:id="@+id/Wednesday2"
+                android:id="@+id/Monday2"
                 android:layout_width="50dp"
                 android:layout_height="match_parent"
                 android:layout_marginHorizontal="1dp"
@@ -285,7 +287,37 @@
                 android:gravity="center" />
 
             <TextView
-                android:id="@+id/Monday2"
+                android:id="@+id/Wednesday2"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/Thursday2"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/Friday2"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/Saturday2"
                 android:layout_width="50dp"
                 android:layout_height="match_parent"
                 android:layout_marginHorizontal="1dp"
@@ -304,19 +336,27 @@
                 android:background="@color/white"
                 android:gravity="center" />
 
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+
             <LinearLayout
                 android:layout_width="50dp"
                 android:layout_height="match_parent"
                 android:layout_marginBottom="1dp"
+                android:background="@color/orangePlus"
                 android:layout_weight="1"
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/timeslot3"
+                    android:id="@+id/timeslot5"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="#9651E4"
                     android:gravity="center"
                     android:text="00:00"
                     android:textColor="@color/white"
@@ -324,11 +364,10 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/timeslot4"
+                    android:id="@+id/timeslot6"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="#9651E4"
                     android:gravity="center"
                     android:text="00:00"
                     android:textColor="@color/white"
@@ -338,46 +377,8 @@
 
             </LinearLayout>
 
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="center_vertical">
-
             <TextView
-                android:id="@+id/Saturday3"
-                android:layout_width="50dp"
-                android:layout_height="match_parent"
-                android:layout_marginHorizontal="1dp"
-                android:layout_marginBottom="1dp"
-                android:layout_weight="1"
-                android:background="@color/white"
-                android:gravity="center" />
-
-            <TextView
-                android:id="@+id/Friday3"
-                android:layout_width="50dp"
-                android:layout_height="match_parent"
-                android:layout_marginHorizontal="1dp"
-                android:layout_marginBottom="1dp"
-                android:layout_weight="1"
-                android:background="@color/white"
-                android:gravity="center" />
-
-            <TextView
-                android:id="@+id/Thursday3"
-                android:layout_width="50dp"
-                android:layout_height="match_parent"
-                android:layout_marginHorizontal="1dp"
-                android:layout_marginBottom="1dp"
-                android:layout_weight="1"
-                android:background="@color/white"
-                android:gravity="center" />
-
-            <TextView
-                android:id="@+id/Wednesday3"
+                android:id="@+id/Monday3"
                 android:layout_width="50dp"
                 android:layout_height="match_parent"
                 android:layout_marginHorizontal="1dp"
@@ -397,7 +398,37 @@
                 android:gravity="center" />
 
             <TextView
-                android:id="@+id/Monday3"
+                android:id="@+id/Wednesday3"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/Thursday3"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/Friday3"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/Saturday3"
                 android:layout_width="50dp"
                 android:layout_height="match_parent"
                 android:layout_marginHorizontal="1dp"
@@ -416,19 +447,28 @@
                 android:background="@color/white"
                 android:gravity="center" />
 
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+
             <LinearLayout
                 android:layout_width="50dp"
                 android:layout_height="match_parent"
+                android:layout_marginTop="1dp"
                 android:layout_marginBottom="1dp"
+                android:background="@color/orangePlus"
                 android:layout_weight="1"
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/timeslot5"
+                    android:id="@+id/timeslot7"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="#9651E4"
                     android:gravity="center"
                     android:text="00:00"
                     android:textColor="@color/white"
@@ -436,11 +476,10 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/timeslot6"
+                    android:id="@+id/timeslot8"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="#9651E4"
                     android:gravity="center"
                     android:text="00:00"
                     android:textColor="@color/white"
@@ -450,46 +489,8 @@
 
             </LinearLayout>
 
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="center_vertical">
-
             <TextView
-                android:id="@+id/Saturday4"
-                android:layout_width="50dp"
-                android:layout_height="match_parent"
-                android:layout_marginHorizontal="1dp"
-                android:layout_marginBottom="1dp"
-                android:layout_weight="1"
-                android:background="@color/white"
-                android:gravity="center" />
-
-            <TextView
-                android:id="@+id/Friday4"
-                android:layout_width="50dp"
-                android:layout_height="match_parent"
-                android:layout_marginHorizontal="1dp"
-                android:layout_marginBottom="1dp"
-                android:layout_weight="1"
-                android:background="@color/white"
-                android:gravity="center" />
-
-            <TextView
-                android:id="@+id/Thursday4"
-                android:layout_width="50dp"
-                android:layout_height="match_parent"
-                android:layout_marginHorizontal="1dp"
-                android:layout_marginBottom="1dp"
-                android:layout_weight="1"
-                android:background="@color/white"
-                android:gravity="center" />
-
-            <TextView
-                android:id="@+id/Wednesday4"
+                android:id="@+id/Monday4"
                 android:layout_width="50dp"
                 android:layout_height="match_parent"
                 android:layout_marginHorizontal="1dp"
@@ -509,7 +510,37 @@
                 android:gravity="center" />
 
             <TextView
-                android:id="@+id/Monday4"
+                android:id="@+id/Wednesday4"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/Thursday4"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/Friday4"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/Saturday4"
                 android:layout_width="50dp"
                 android:layout_height="match_parent"
                 android:layout_marginHorizontal="1dp"
@@ -528,41 +559,6 @@
                 android:background="@color/white"
                 android:gravity="center" />
 
-            <LinearLayout
-                android:layout_width="50dp"
-                android:layout_height="match_parent"
-                android:layout_marginTop="1dp"
-                android:layout_marginBottom="1dp"
-                android:layout_weight="1"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/timeslot7"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:background="#9651E4"
-                    android:gravity="center"
-                    android:text="00:00"
-                    android:textColor="@color/white"
-                    android:textSize="11dp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/timeslot8"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:background="#9651E4"
-                    android:gravity="center"
-                    android:text="00:00"
-                    android:textColor="@color/white"
-                    android:textSize="11dp"
-                    android:textStyle="bold" />
-
-
-            </LinearLayout>
-
         </TableRow>
 
         <TableRow
@@ -571,38 +567,40 @@
             android:layout_weight="1"
             android:gravity="center_vertical">
 
-            <TextView
-                android:id="@+id/Saturday5"
+            <LinearLayout
                 android:layout_width="50dp"
                 android:layout_height="match_parent"
-                android:layout_marginHorizontal="1dp"
                 android:layout_marginBottom="1dp"
+                android:background="@color/orangePlus"
                 android:layout_weight="1"
-                android:background="@color/white"
-                android:gravity="center" />
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/timeslot9"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="00:00"
+                    android:textColor="@color/white"
+                    android:textSize="11dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/timeslot10"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="00:00"
+                    android:textColor="@color/white"
+                    android:textSize="11dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
 
             <TextView
-                android:id="@+id/Friday5"
-                android:layout_width="50dp"
-                android:layout_height="match_parent"
-                android:layout_marginHorizontal="1dp"
-                android:layout_marginBottom="1dp"
-                android:layout_weight="1"
-                android:background="@color/white"
-                android:gravity="center" />
-
-            <TextView
-                android:id="@+id/Thursday5"
-                android:layout_width="50dp"
-                android:layout_height="match_parent"
-                android:layout_marginHorizontal="1dp"
-                android:layout_marginBottom="1dp"
-                android:layout_weight="1"
-                android:background="@color/white"
-                android:gravity="center" />
-
-            <TextView
-                android:id="@+id/Wednesday5"
+                android:id="@+id/Monday5"
                 android:layout_width="50dp"
                 android:layout_height="match_parent"
                 android:layout_marginHorizontal="1dp"
@@ -622,7 +620,37 @@
                 android:gravity="center" />
 
             <TextView
-                android:id="@+id/Monday5"
+                android:id="@+id/Wednesday5"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/Thursday5"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/Friday5"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/Saturday5"
                 android:layout_width="50dp"
                 android:layout_height="match_parent"
                 android:layout_marginHorizontal="1dp"
@@ -641,39 +669,6 @@
                 android:background="@color/white"
                 android:gravity="center" />
 
-            <LinearLayout
-                android:layout_width="50dp"
-                android:layout_height="match_parent"
-                android:layout_marginBottom="1dp"
-                android:layout_weight="1"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/timeslot9"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:background="#9651E4"
-                    android:gravity="center"
-                    android:text="00:00"
-                    android:textColor="@color/white"
-                    android:textSize="11dp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/timeslot10"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:background="#9651E4"
-                    android:gravity="center"
-                    android:text="00:00"
-                    android:textColor="@color/white"
-                    android:textSize="11dp"
-                    android:textStyle="bold" />
-
-            </LinearLayout>
-
         </TableRow>
 
         <TableRow
@@ -682,38 +677,40 @@
             android:layout_weight="1"
             android:gravity="center_vertical">
 
-            <TextView
-                android:id="@+id/Saturday6"
+            <LinearLayout
                 android:layout_width="50dp"
                 android:layout_height="match_parent"
-                android:layout_marginHorizontal="1dp"
                 android:layout_marginBottom="1dp"
+                android:background="@color/orangePlus"
                 android:layout_weight="1"
-                android:background="@color/white"
-                android:gravity="center" />
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/timeslot11"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="00:00"
+                    android:textColor="@color/white"
+                    android:textSize="11dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/timeslot12"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="00:00"
+                    android:textColor="@color/white"
+                    android:textSize="11dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
 
             <TextView
-                android:id="@+id/Friday6"
-                android:layout_width="50dp"
-                android:layout_height="match_parent"
-                android:layout_marginHorizontal="1dp"
-                android:layout_marginBottom="1dp"
-                android:layout_weight="1"
-                android:background="@color/white"
-                android:gravity="center" />
-
-            <TextView
-                android:id="@+id/Thursday6"
-                android:layout_width="50dp"
-                android:layout_height="match_parent"
-                android:layout_marginHorizontal="1dp"
-                android:layout_marginBottom="1dp"
-                android:layout_weight="1"
-                android:background="@color/white"
-                android:gravity="center" />
-
-            <TextView
-                android:id="@+id/Wednesday6"
+                android:id="@+id/Monday6"
                 android:layout_width="50dp"
                 android:layout_height="match_parent"
                 android:layout_marginHorizontal="1dp"
@@ -733,7 +730,37 @@
                 android:gravity="center" />
 
             <TextView
-                android:id="@+id/Monday6"
+                android:id="@+id/Wednesday6"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/Thursday6"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/Friday6"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/Saturday6"
                 android:layout_width="50dp"
                 android:layout_height="match_parent"
                 android:layout_marginHorizontal="1dp"
@@ -752,39 +779,6 @@
                 android:background="@color/white"
                 android:gravity="center" />
 
-            <LinearLayout
-                android:layout_width="50dp"
-                android:layout_height="match_parent"
-                android:layout_marginBottom="1dp"
-                android:layout_weight="1"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/timeslot11"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:background="#9651E4"
-                    android:gravity="center"
-                    android:text="00:00"
-                    android:textColor="@color/white"
-                    android:textSize="11dp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/timeslot12"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:background="#9651E4"
-                    android:gravity="center"
-                    android:text="00:00"
-                    android:textColor="@color/white"
-                    android:textSize="11dp"
-                    android:textStyle="bold" />
-
-            </LinearLayout>
-
         </TableRow>
 
         <TableRow
@@ -793,38 +787,41 @@
             android:layout_weight="1"
             android:gravity="center_vertical">
 
-            <TextView
-                android:id="@+id/Saturday7"
+
+            <LinearLayout
                 android:layout_width="50dp"
                 android:layout_height="match_parent"
-                android:layout_marginHorizontal="1dp"
                 android:layout_marginBottom="1dp"
+                android:background="@color/orangePlus"
                 android:layout_weight="1"
-                android:background="@color/white"
-                android:gravity="center" />
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/timeslot13"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="00:00"
+                    android:textColor="@color/white"
+                    android:textSize="11dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/timeslot14"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="00:00"
+                    android:textColor="@color/white"
+                    android:textSize="11dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
 
             <TextView
-                android:id="@+id/Friday7"
-                android:layout_width="50dp"
-                android:layout_height="match_parent"
-                android:layout_marginHorizontal="1dp"
-                android:layout_marginBottom="1dp"
-                android:layout_weight="1"
-                android:background="@color/white"
-                android:gravity="center" />
-
-            <TextView
-                android:id="@+id/Thursday7"
-                android:layout_width="50dp"
-                android:layout_height="match_parent"
-                android:layout_marginHorizontal="1dp"
-                android:layout_marginBottom="1dp"
-                android:layout_weight="1"
-                android:background="@color/white"
-                android:gravity="center" />
-
-            <TextView
-                android:id="@+id/Wednesday7"
+                android:id="@+id/Monday7"
                 android:layout_width="50dp"
                 android:layout_height="match_parent"
                 android:layout_marginHorizontal="1dp"
@@ -844,7 +841,37 @@
                 android:gravity="center" />
 
             <TextView
-                android:id="@+id/Monday7"
+                android:id="@+id/Wednesday7"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/Thursday7"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/Friday7"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/Saturday7"
                 android:layout_width="50dp"
                 android:layout_height="match_parent"
                 android:layout_marginHorizontal="1dp"
@@ -862,39 +889,6 @@
                 android:layout_weight="1"
                 android:background="@color/white"
                 android:gravity="center" />
-
-            <LinearLayout
-                android:layout_width="50dp"
-                android:layout_height="match_parent"
-                android:layout_marginBottom="1dp"
-                android:layout_weight="1"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/timeslot13"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:background="#9651E4"
-                    android:gravity="center"
-                    android:text="00:00"
-                    android:textColor="@color/white"
-                    android:textSize="11dp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/timeslot14"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:background="#9651E4"
-                    android:gravity="center"
-                    android:text="00:00"
-                    android:textColor="@color/white"
-                    android:textSize="11dp"
-                    android:textStyle="bold" />
-
-            </LinearLayout>
 
         </TableRow>
 

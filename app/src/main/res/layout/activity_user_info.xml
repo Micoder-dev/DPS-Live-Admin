@@ -29,16 +29,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/userName" />
 
-    <Button
-        android:id="@+id/attendanceBtn"
+    <ImageButton
+        android:id="@+id/showAdBtn"
         android:layout_width="wrap_content"
-        android:layout_height="40dp"
-        android:layout_marginTop="4dp"
-        android:layout_marginEnd="8dp"
-        android:text="Attendance"
-        android:textAllCaps="false"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:backgroundTint="?android:colorPrimary"
+        android:src="@drawable/ic_refresh"
+        app:layout_constraintBottom_toBottomOf="@+id/userEmail"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/userEmail" />
+        app:layout_constraintTop_toTopOf="@+id/userName"
+        app:tint="@color/liteBg" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -47,7 +48,18 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/attendanceBtn">
+        app:layout_constraintTop_toBottomOf="@+id/userEmail">
+
+        <LinearLayout
+            android:id="@+id/fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+            <fragment
+                android:name="com.micoder.dpsadmin.fragments.AttendanceFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
 
         <com.google.android.material.tabs.TabLayout
             android:id="@+id/tablayout"
@@ -58,13 +70,15 @@
             app:tabIndicatorColor="@color/orange"
             app:tabSelectedTextColor="@color/orangePlus"
             app:tabTextAppearance="@style/TabLayoutTextStyle"
-            app:tabTextColor="@color/black" />
+            app:tabTextColor="@color/black"
+            android:visibility="gone"/>
 
         <androidx.viewpager.widget.ViewPager
             android:id="@+id/viewPager"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:visibility="gone"/>
 
     </LinearLayout>
 

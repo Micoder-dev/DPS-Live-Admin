@@ -1,22 +1,16 @@
 package com.micoder.dpsadmin.ui
 
-import android.app.Dialog
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.text.TextUtils
-import android.view.ViewGroup
-import android.widget.Button
-import android.widget.EditText
-import android.widget.TextView
+import android.view.View
 import android.widget.Toast
 import androidx.viewpager.widget.ViewPager
+import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.google.android.material.tabs.TabLayout
-import com.google.firebase.database.DatabaseReference
-import com.google.firebase.database.FirebaseDatabase
 import com.micoder.dpsadmin.R
 import com.micoder.dpsadmin.adapters.TabFragmentAdapter
 import com.micoder.dpsadmin.databinding.ActivityUserInfoBinding
-import com.micoder.dpsadmin.utils.InputFilterMinMax
+import com.micoder.dpsadmin.fragments.AttendanceFragment
 
 class UserInfoActivity : AppCompatActivity() {
 
@@ -27,13 +21,7 @@ class UserInfoActivity : AppCompatActivity() {
 
     lateinit var userName: String
     lateinit var userEmail: String
-    lateinit var userUid: String
-
-    private lateinit var dialog: Dialog
-    private lateinit var attendanceET: EditText
-    private lateinit var updateAttendanceBtn: Button
-
-    private lateinit var dbRef: DatabaseReference
+    var userUid: String = ""
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -42,13 +30,57 @@ class UserInfoActivity : AppCompatActivity() {
 
         supportActionBar?.hide()
 
-        dbRef = FirebaseDatabase.getInstance().getReference("users")
-
         val bundle: Bundle? = intent.extras
         userName = bundle!!.getString("userName").toString()
         userEmail = bundle.getString("userEmail").toString()
         userUid = bundle.getString("userUid").toString()
 
+
+        setUpResults()
+
+        val attendanceFragment = AttendanceFragment()
+        supportFragmentManager.beginTransaction().replace(R.id.fragment_container,attendanceFragment).disallowAddToBackStack().commit()
+
+        showAD()
+
+        binding.showAdBtn.setOnClickListener {
+            showAD()
+        }
+
+    }
+
+    private fun showAD() {
+        var selectedClassItemIndex = 0
+        val classes = arrayOf("Attendance", "Results")
+        var selectedClass = classes[selectedClassItemIndex]
+
+        MaterialAlertDialogBuilder(this, R.style.ThemeOverlay_MaterialComponents_MaterialAlertDialog_Background)
+            .setTitle("Select your choice")
+            .setCancelable(false)
+            .setSingleChoiceItems(classes, selectedClassItemIndex) { _, which ->
+                selectedClassItemIndex = which
+                selectedClass = classes[which]
+            }
+            .setPositiveButton("Select") { _, _ ->
+                Toast.makeText(this, "$selectedClass Selected", Toast.LENGTH_SHORT).show()
+                when(selectedClass) {
+                    "Attendance" -> {
+                        binding.fragmentContainer.visibility = View.VISIBLE
+                        binding.tablayout.visibility = View.GONE
+                        binding.viewPager.visibility = View.GONE
+                    }
+                    "Results" -> {
+                        binding.fragmentContainer.visibility = View.GONE
+                        binding.tablayout.visibility = View.VISIBLE
+                        binding.viewPager.visibility = View.VISIBLE
+                    }
+                    else -> Toast.makeText(this, "Something went wrong",Toast.LENGTH_LONG).show()
+                }
+            }
+            .show()
+    }
+
+    private fun setUpResults() {
         val name = binding.userName
         val email = binding.userEmail
         name.setText(userName)
@@ -73,55 +105,6 @@ class UserInfoActivity : AppCompatActivity() {
             override fun onTabUnselected(tab: TabLayout.Tab) {}
             override fun onTabReselected(tab: TabLayout.Tab) {}
         })
-
-        // Attendance
-        binding.attendanceBtn.setOnClickListener {
-            showAttendanceDialog()
-        }
-
-    }
-    fun showAttendanceDialog() {
-
-        dialog = Dialog(this)
-        dialog.setContentView(R.layout.attendance_dialog)
-        dialog.window!!.setLayout(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT)
-        attendanceET = dialog.findViewById(R.id.attendanceET)
-        attendanceET.filters = arrayOf(InputFilterMinMax(0, 100))
-        updateAttendanceBtn = dialog.findViewById(R.id.updateAttendanceBtn)
-
-        dialog.show()
-
-        dbRef.child(userUid).get().addOnSuccessListener {
-            if (it.exists()) {
-                if (it.child("attendance").value.toString() == "null") {
-                    attendanceET.setText("")
-                }else {
-                    val percentage = it.child("attendance").value.toString()
-                    attendanceET.setText(percentage)
-                }
-            }
-            else {
-                attendanceET.setText("")
-            }
-        }
-
-        updateAttendanceBtn.setOnClickListener {
-            val percent = attendanceET.text.toString()
-            if (TextUtils.isEmpty(percent)) {
-                attendanceET.requestFocus()
-                attendanceET.error = "percentage required"
-            }else {
-                val values = HashMap<String, Any>()
-                values["attendance"] = percent
-                dbRef.child(userUid).updateChildren(values).addOnSuccessListener {
-                    Toast.makeText(this, "Percentage Updated",Toast.LENGTH_SHORT).show()
-                }.addOnFailureListener {
-                    Toast.makeText(this, it.message,Toast.LENGTH_SHORT).show()
-                }
-                attendanceET.setText(percent)
-                dialog.dismiss()
-            }
-        }
     }
 
 }

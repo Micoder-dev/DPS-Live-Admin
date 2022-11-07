@@ -6,6 +6,10 @@
         <item name="colorAccent">@color/white</item>
         <item name="android:textColorPrimary">@color/black</item>
         <item name="android:windowBackground">@color/liteBg</item>
+
+        <!-- Disable force dark mode in android -->
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+
     </style>
 
     <style name="TabLayoutTextStyle">
